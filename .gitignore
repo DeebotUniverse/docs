@@ -1,0 +1,8 @@
+__pycache__
+pythonenv*
+venv
+.venv
+.coverage
+.idea
+.mypy_cache
+.pytest_cache
