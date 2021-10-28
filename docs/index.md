@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Welcome to documentation for Deebot Universe projects
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+[DeebotUniverse](https://github.com/DeebotUniverse) is a collection of Open Source projects and documentation related to Deebot devices from Ecovacs.
 
-## Commands
+## Disclaimer
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This documentation is unofficial, and is not sponsored, owned or endorsed by ECOVACS Robotics (ECOVACS).
