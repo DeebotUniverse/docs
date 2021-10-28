@@ -5,8 +5,8 @@ site_description: Docs for Open Source projects related to Deebot devices from E
 nav:
   - 'Home': 'index.md'
   - 'General':
-      - 'FAQ': 'faq.md'
-      - 'Country codes': 'countryCodes.md'
+      - 'FAQ': 'general/faq.md'
+      - 'Country codes': 'general/countryCodes.md'
 
 theme:
   name: material
