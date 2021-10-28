@@ -1,15 +1,12 @@
 site_name: Deebot
-repo_url: https://github.com/DeebotUniverse/docs
 site_description: Docs for Open Source projects related to Deebot devices from Ecovacs - but we are in no way affiliated with ECOVACS Robotics (ECOVACS)
 
-nav:
-  - 'Home': 'index.md'
-  - 'General':
-      - 'FAQ': 'general/faq.md'
-      - 'Country codes': 'general/countryCodes.md'
+repo_url: https://github.com/DeebotUniverse/docs
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -21,3 +18,16 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section for reference
+
+nav:
+  - 'Home': 'index.md'
+  - 'General':
+      - 'FAQ': 'faq.md'
+      - 'Country codes': 'countryCodes.md'
