@@ -56,5 +56,3 @@ In general a response looks like:
   - `fail`: some error happen. e.g. vacuum did not respond
 - `resp`: response from the vacuum in XML format
 - `id`: Request id
-
--
