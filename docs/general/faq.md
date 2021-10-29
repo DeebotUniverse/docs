@@ -1,6 +1,6 @@
 # Frequently asked questions
 
-## Model Support
+## Model support
 
 ### Is my device supported?
 
