@@ -39,7 +39,12 @@ nav:
       - "Country codes": general/countryCodes.md
       - FAQ: general/faq.md
   - Advanced:
-      - Commands:
-          - advanced/commands/index.md
-          - General: advanced/commands/general.md
-          - Stats: advanced/commands/stats.md
+      - advanced/index.md
+      - MQTT:
+          - advanced/mqtt/index.md
+          - JSON:
+              - advanced/mqtt/json/index.md
+              - Commands:
+                  - advanced/mqtt/json/commands/index.md
+                  - General: advanced/mqtt/json/commands/general.md
+                  - Stats: advanced/mqtt/json/commands/stats.md
