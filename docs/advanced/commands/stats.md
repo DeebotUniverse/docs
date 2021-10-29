@@ -18,12 +18,12 @@ To get information about the whole response, please refer to [Command General](g
 
 ```json
 {
-  "area":36,
-  "time":2063,
-  "cid":"111",
-  "start":"1297462509",
-  "type":"spotArea",
-  "content":"7,12,11,14"
+  "area": 36,
+  "time": 2063,
+  "cid": "111",
+  "start": "1297462509",
+  "type": "spotArea",
+  "content": "7,12,11,14"
 }
 ```
 
