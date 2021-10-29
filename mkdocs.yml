@@ -39,7 +39,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - General:
-      - "Country codes": general/countryCodes.md
       - FAQ: general/faq.md
   - Advanced:
       - advanced/index.md
