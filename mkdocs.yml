@@ -39,6 +39,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - General:
+      - Projects: general/projects.md
       - FAQ: general/faq.md
   - Advanced:
       - advanced/index.md
