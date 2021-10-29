@@ -2,7 +2,7 @@
 
 ## `getStats`
 
-Command to get information's about the last or ongoing cleaning job
+Command to get information about the last or ongoing cleaning job
 
 ### Request
 
@@ -13,7 +13,7 @@ Only the name and the arguments will be described. General information can be fo
 
 ### Response
 
-Only `data` object will be described here.
+Only the `data` object will be described here.
 To get information about the whole response, please refer to [Command General](general.md#response)
 
 ```json
@@ -34,4 +34,4 @@ To get information about the whole response, please refer to [Command General](g
 - `cid`: Cleaning id
 - `start`: datetime, when clean job was started
 - `type`: The cleaning type
-- `content`: The map-sub-set (room) id's, which should be cleaned by this job
+- `content`: The map-sub-set (room) ids, which should be cleaned by this job
