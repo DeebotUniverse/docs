@@ -27,7 +27,12 @@ markdown_extensions:
       permalink_title: Anchor link to this section for reference
 
 nav:
-  - "Home": "index.md"
-  - "General":
-      - "FAQ": "general/faq.md"
-      - "Country codes": "general/countryCodes.md"
+  - Home: index.md
+  - General:
+      - "Country codes": general/countryCodes.md
+      - FAQ: general/faq.md
+  - Advanced:
+      - Commands:
+          - General: advanced/commands/general.md
+          - Stats: advanced/commands/stats.md
+
