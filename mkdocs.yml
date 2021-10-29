@@ -32,6 +32,9 @@ markdown_extensions:
   - toc:
       permalink: true
       permalink_title: Anchor link to this section for reference
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
   - Home: index.md
@@ -48,3 +51,5 @@ nav:
                   - advanced/mqtt/json/commands/index.md
                   - General: advanced/mqtt/json/commands/general.md
                   - Stats: advanced/mqtt/json/commands/stats.md
+  - Deebot:
+      - Models: deebot/models.md
