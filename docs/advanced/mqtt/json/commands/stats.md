@@ -29,7 +29,7 @@ To get information about the whole response, please refer to [Command General](g
 
 #### Response description
 
-- `area`: The cleaned are in m²
+- `area`: The cleaned area in m²
 - `time`: The elapsed time since starting this job in seconds
 - `cid`: Cleaning id
 - `start`: datetime, when clean job was started
