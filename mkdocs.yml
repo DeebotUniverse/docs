@@ -27,6 +27,7 @@ theme:
 
 markdown_extensions:
   - admonition
+  - mdx_truly_sane_lists
   - tables
   - toc:
       permalink: true
