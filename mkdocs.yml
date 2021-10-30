@@ -21,7 +21,6 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - navigation.indexes
     - navigation.instant
     - navigation.tabs
     - navigation.top
@@ -43,17 +42,13 @@ nav:
       - Models: general/models.md
       - FAQ: general/faq.md
   - Advanced:
-      - advanced/index.md
       - MQTT:
-          - advanced/mqtt/index.md
           - JSON:
-              - advanced/mqtt/json/index.md
               - Commands:
-                  - advanced/mqtt/json/commands/index.md
+                  - Overview: advanced/mqtt/json/commands/overview.md
                   - General: advanced/mqtt/json/commands/general.md
                   - Stats: advanced/mqtt/json/commands/stats.md
           - XML:
-              - advanced/mqtt/xml/index.md
               - Commands:
-                  - advanced/mqtt/xml/commands/index.md
+                  - Overview: advanced/mqtt/xml/commands/overview.md
                   - General: advanced/mqtt/xml/commands/general.md
