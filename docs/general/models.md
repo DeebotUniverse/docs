@@ -3,8 +3,9 @@
 ## Model support
 
 !!! attention "Important notice"
-We do not provide support that is the same, equal, or similar to manufacturer support
-because we are in no way affiliated with ECOVACS nor is it sponsored or endorsed by ECOVACS
+
+    We do not provide support that is the same, equal, or similar to manufacturer support
+    because we are in no way affiliated with ECOVACS nor is it sponsored or endorsed by ECOVACS
 
 | Model                   |           DeebotClient           |        ecovacs-deebot.js         |
 | ----------------------- | :------------------------------: | :------------------------------: |
