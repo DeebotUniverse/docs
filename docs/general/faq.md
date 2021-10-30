@@ -4,4 +4,4 @@
 
 ### Is my device supported?
 
-Please check [this list](https://deebot.readthedocs.io/en/latest/deebot/models/) of models to see if your device is supported.
+Please check [this list](https://deebot.readthedocs.io/en/latest/general/models/) of models to see if your device is supported.
