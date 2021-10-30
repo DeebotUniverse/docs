@@ -40,6 +40,7 @@ nav:
   - Home: index.md
   - General:
       - Projects: general/projects.md
+      - Models: general/models.md
       - FAQ: general/faq.md
   - Advanced:
       - advanced/index.md
@@ -56,5 +57,3 @@ nav:
               - Commands:
                   - advanced/mqtt/xml/commands/index.md
                   - General: advanced/mqtt/xml/commands/general.md
-  - Deebot:
-      - Models: deebot/models.md
