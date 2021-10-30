@@ -7,7 +7,7 @@
     We do not provide support that is the same, equal, or similar to manufacturer support
     because we are in no way affiliated with ECOVACS nor is it sponsored or endorsed by ECOVACS
 
-| Model                   |           DeebotClient           |        ecovacs-deebot.js         | Protocol  |
+| Model                   |          deebot-client           |        ecovacs-deebot.js         | Protocol  |
 | ----------------------- | :------------------------------: | :------------------------------: | --------- |
 | Deebot 500              |         :material-close:         |         :material-check:         |           |
 | Deebot 600/601/605      |         :material-close:         |         :material-check:         | MQTT/XML  |

@@ -32,13 +32,13 @@ A command request look in general like:
 
 - `cmdName`: command name
 - `header`: header object, values are constant except `ts`
-    - `ts`: current timestamp
+  - `ts`: current timestamp
 - `body.data`: object with the command arguments. `body` object is missing, when command has no args.
 - `payloadType`:
-    - `j` stands for json
+  - `j` stands for json
 - `td`: Specifier if request or response
-    - `q`: Request
-    - `p`: Response
+  - `q`: Request
+  - `p`: Response
 - `toId`: Did of vacuum
 - `toRes`: Resource of vacuum
 - `toType`: class (model) of vacuum
@@ -73,15 +73,15 @@ In general a response looks like:
 
 - `id`: Request id
 - `ret`:
-    - `ok`: command was retrieved successfully from vacuum
-    - `fail`: some error happen. e.g. vacuum did not respond
+  - `ok`: command was retrieved successfully from vacuum
+  - `fail`: some error happen. e.g. vacuum did not respond
 - `resp`: response object from the vacuum
-    - `header`
-        - `ts`: timestamp
-        - `ver`: protocol version
-        - `fwVer`: firmware version
-        - `hwVer`: hardware version
-    - `body`
-        - `data`: Holding the actual response from the command. See specific command
-    - `code`: Error code; `0` means no error, command was executed successfully
-    - `msg`: Description for the error code
+  - `header`
+    - `ts`: timestamp
+    - `ver`: protocol version
+    - `fwVer`: firmware version
+    - `hwVer`: hardware version
+  - `body`
+    - `data`: Holding the actual response from the command. See specific command
+  - `code`: Error code; `0` means no error, command was executed successfully
+  - `msg`: Description for the error code

@@ -22,7 +22,7 @@ Please make sure you fork the repo and change the clone URL in the example below
 
 - Linux Mint / Ubuntu 18.04 LTS / 19.10 / 20.04 LTS:
 
-    - Preparations (only required once):
+  - Preparations (only required once):
 
   ```bash
   git clone https://github.com/YOUR-USERNAME/docs
@@ -31,7 +31,7 @@ Please make sure you fork the repo and change the clone URL in the example below
   sudo pip3 install -r requirements.txt
   ```
 
-    - Running the docs server:
+  - Running the docs server:
 
   ```bash
   mkdocs serve --dev-addr 0.0.0.0:8000
@@ -39,7 +39,7 @@ Please make sure you fork the repo and change the clone URL in the example below
 
 - Fedora Linux instructions (tested on Fedora Linux 28):
 
-    - Preparations (only required once):
+  - Preparations (only required once):
 
   ```bash
   git clone https://github.com/YOUR-USERNAME/docs
@@ -47,7 +47,7 @@ Please make sure you fork the repo and change the clone URL in the example below
   pip install --user -r requirements.txt
   ```
 
-    - Running the docs server:
+  - Running the docs server:
 
   ```bash
   mkdocs serve --dev-addr 0.0.0.0:8000
@@ -55,7 +55,7 @@ Please make sure you fork the repo and change the clone URL in the example below
 
 - Docker instructions:
 
-    - One-shot run:
+  - One-shot run:
 
   ```bash
   docker run -v `pwd`:/opt/app/ -w /opt/app/ -p 8000:8000 -it nikolaik/python-nodejs:python3.7-nodejs12 \
