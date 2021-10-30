@@ -1,11 +1,13 @@
-# Model overview
-
-## Model support
+# Model support
 
 !!! attention "Important notice"
 
     We do not provide support that is the same, equal, or similar to manufacturer support
     because we are in no way affiliated with ECOVACS nor is it sponsored or endorsed by ECOVACS
+
+!!! note
+
+    Which library is used by a integration can be found under the [projects page](projects.md).
 
 | Model                   |          deebot-client           |        ecovacs-deebot.js         | Protocol  |
 | ----------------------- | :------------------------------: | :------------------------------: | --------- |
@@ -31,7 +33,7 @@
 | Deebot U2 series        |                                  |    :material-progress-check:     | MQTT/JSON |
 | Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      |
 
-### Legend
+## Legend
 
 | Icon                             | description                                                                             |
 | -------------------------------- | --------------------------------------------------------------------------------------- |

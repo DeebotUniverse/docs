@@ -48,6 +48,7 @@ nav:
       - FAQ: general/faq.md
   - Integrations:
       - Home Assistant:
+          - integrations/home-assistant/index.md
           - Setup: integrations/home-assistant/setup.md
           - Services: integrations/home-assistant/services.md
           - Issues: integrations/home-assistant/issues.md
