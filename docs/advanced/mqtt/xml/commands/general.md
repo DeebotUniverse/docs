@@ -30,9 +30,9 @@ A command request look in general like:
 - `cmdName`: command name
 - `playload`: xml with the command arguments
 - `payloadType`:
-    - `x`: xml
+  - `x`: xml
 - `td`: Specifier if request or response
-    - `q`: Request
+  - `q`: Request
 - `toId`: Did of vacuum
 - `toRes`: Resource of vacuum
 - `toType`: class (model) of vacuum
@@ -52,7 +52,7 @@ In general a response looks like:
 ### Response description
 
 - `ret`:
-    - `ok`: command was retrieved successfully from vacuum
-    - `fail`: some error happen. e.g. vacuum did not respond
+  - `ok`: command was retrieved successfully from vacuum
+  - `fail`: some error happen. e.g. vacuum did not respond
 - `resp`: response from the vacuum in XML format
 - `id`: Request id

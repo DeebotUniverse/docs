@@ -21,6 +21,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+    - navigation.indexes
     - navigation.instant
     - navigation.tabs
     - navigation.top
@@ -35,6 +36,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
 
 nav:
   - Home: index.md
@@ -42,14 +46,19 @@ nav:
       - Projects: general/projects.md
       - Models: general/models.md
       - FAQ: general/faq.md
+  - Integrations:
+      - Home Assistant:
+          - Setup: integrations/home-assistant/setup.md
+          - Services: integrations/home-assistant/services.md
+          - Issues: integrations/home-assistant/issues.md
   - Advanced:
       - MQTT:
           - JSON:
               - Commands:
-                  - Overview: advanced/mqtt/json/commands/overview.md
+                  - advanced/mqtt/json/commands/index.md
                   - General: advanced/mqtt/json/commands/general.md
                   - Stats: advanced/mqtt/json/commands/stats.md
           - XML:
               - Commands:
-                  - Overview: advanced/mqtt/xml/commands/overview.md
+                  - advanced/mqtt/xml/commands/index.md
                   - General: advanced/mqtt/xml/commands/general.md

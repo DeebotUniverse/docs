@@ -1,12 +1,15 @@
-# Projects overview
+# Projects
 
-## Libraries
+## :material-language-python: deebot-client
 
-- :material-language-python: [client.py](https://github.com/DeebotUniverse/client.py) (Python)
-- :material-language-javascript: [ecovacs-deebot.js](https://github.com/mrbungle64/ecovacs-deebot.js) (Javascript/Node.js)
+[deebot-client](https://github.com/DeebotUniverse/client.py) is a python library and is used by the following projects:
 
-## Smart home integrations
+- :material-home-assistant: [Deebot for Home Assistant](https://github.com/DeebotUniverse/Deebot-4-Home-Assistant) (Home Assistant)
+- :material-console-line: [Client CLI](https://github.com/DeebotUniverse/client.cli) (Command line interface)
 
-- :material-home-assistant: [Deebot for Home Assistant](https://github.com/And3rsL/Deebot-for-Home-Assistant) (Home Assistant)
+## :material-language-javascript: ecovacs-deebot.js
+
+[ecovacs-deebot.js](https://github.com/mrbungle64/ecovacs-deebot.js) is a Javascript/Node.js library and is used by the following projects:
+
 - :material-iobroker: [Ecovacs Deebot adapter](https://github.com/mrbungle64/ioBroker.ecovacs-deebot) (ioBroker)
 - :fontawesome-solid-code-branch: [node-red-contrib-ecovacs-deebot](https://github.com/mrbungle64/node-red-contrib-ecovacs-deebot) (Node-RED)
