@@ -28,6 +28,7 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - mdx_truly_sane_lists
   - tables
   - toc:
@@ -50,8 +51,15 @@ nav:
       - Home Assistant:
           - integrations/home-assistant/index.md
           - Setup: integrations/home-assistant/setup.md
+          - Entities: integrations/home-assistant/entities.md
           - Services: integrations/home-assistant/services.md
           - Issues: integrations/home-assistant/issues.md
+          - Misc: integrations/home-assistant/misc.md
+          - Examples:
+              - Commands: integrations/home-assistant/examples/commands.md
+              - UI:
+                  - Simple: integrations/home-assistant/examples/ui/simple.md
+                  - Advanced: integrations/home-assistant/examples/ui/advanced.md
   - Advanced:
       - MQTT:
           - JSON:
