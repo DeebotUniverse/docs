@@ -12,4 +12,8 @@
 [ecovacs-deebot.js](https://github.com/mrbungle64/ecovacs-deebot.js) is a Javascript/Node.js library and is used by the following projects:
 
 - :material-iobroker: [Ecovacs Deebot adapter](https://github.com/mrbungle64/ioBroker.ecovacs-deebot) (ioBroker)
-- :fontawesome-solid-code-branch: [node-red-contrib-ecovacs-deebot](https://github.com/mrbungle64/node-red-contrib-ecovacs-deebot) (Node-RED)
+- :material-home-automation: [node-red-contrib-ecovacs-deebot](https://github.com/mrbungle64/node-red-contrib-ecovacs-deebot) (Node-RED)
+- :material-home-automation: [homebridge-deebot](https://github.com/bwp91/homebridge-deebot) (Homebridge)
+- :material-home-automation: [homebridge-deebotecovacs](https://github.com/nicoduj/homebridge-deebotEcovacs) (Homebridge)
+- :material-home-automation: [pimatic-deebot](https://github.com/bertreb/pimatic-deebot) (Pimatic)
+- :material-garage: [Automated robot vacuum cleaner garage](https://github.com/mika2de/ecovacs-deebot-garage)

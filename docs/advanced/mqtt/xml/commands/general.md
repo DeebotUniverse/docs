@@ -13,15 +13,15 @@ A command request look in general like:
   "payloadType": "x",
   "auth": {
     "realm": "ecouser.net",
-    "resource": "[REMOVED]",
-    "token": "[REMOVED]",
-    "userid": "[REMOVED]",
+    "resource": "[resource]",
+    "token": "[token]",
+    "userid": "[userid]",
     "with": "users"
   },
   "td": "q",
-  "toId": "[REMOVED]",
-  "toRes": "[REMOVED]",
-  "toType": "[REMOVED]"
+  "toId": "[toId]",
+  "toRes": "[toRes]",
+  "toType": "[toType]"
 }
 ```
 
@@ -35,7 +35,7 @@ A command request look in general like:
   - `q`: Request
 - `toId`: Did of vacuum
 - `toRes`: Resource of vacuum
-- `toType`: class (model) of vacuum
+- `toType`: class (model) of vacuum (e.g. `ls1ok3`)
 
 ## Response
 
@@ -45,7 +45,7 @@ In general a response looks like:
 {
   "ret": "ok",
   "resp": "[Command respone]",
-  "id": "AwGB"
+  "id": "[id]"
 }
 ```
 
