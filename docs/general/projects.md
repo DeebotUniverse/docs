@@ -16,4 +16,3 @@
 - :material-home-automation: [homebridge-deebot](https://github.com/bwp91/homebridge-deebot) (Homebridge)
 - :material-home-automation: [homebridge-deebotecovacs](https://github.com/nicoduj/homebridge-deebotEcovacs) (Homebridge)
 - :material-home-automation: [pimatic-deebot](https://github.com/bertreb/pimatic-deebot) (Pimatic)
-- :material-garage: [Automated robot vacuum cleaner garage](https://github.com/mika2de/ecovacs-deebot-garage)
