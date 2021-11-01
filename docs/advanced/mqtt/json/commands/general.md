@@ -28,7 +28,7 @@ A command request look in general like:
 }
 ```
 
-### Request description
+### Description
 
 - `cmdName`: command name
 - `header`: header object, values are constant except `ts`
@@ -69,7 +69,7 @@ In general a response looks like:
 }
 ```
 
-### Response description
+### Description
 
 - `id`: Request id
 - `ret`:
@@ -82,6 +82,27 @@ In general a response looks like:
     - `fwVer`: firmware version
     - `hwVer`: hardware version
   - `body`
-    - `data`: Holding the actual response from the command. See specific command
+    - `code`: status code. `0` means command executed successfully
+    - `msg`: Message describing status code
+    - `data`: **Optional** Holding additional command information. See specific command
   - `code`: Error code; `0` means no error, command was executed successfully
   - `msg`: Description for the error code
+
+## Set commands
+
+Set commands have different requests, but the response has always the same schema, if not other mentioned.
+
+### Response
+
+Only the `body` object will be described here.
+To get information about the whole response, please refer to [response](#response)
+
+```json
+{
+  "code": 0,
+  "msg": "ok"
+}
+```
+
+If set command was executed successfully, `code` is equal to 0.
+Otherwise, please check `msg` for a error description.

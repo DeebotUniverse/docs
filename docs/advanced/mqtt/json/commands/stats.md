@@ -27,7 +27,7 @@ To get information about the whole response, please refer to [Command General](g
 }
 ```
 
-#### Response description
+#### Description
 
 - `area`: The cleaned area in m²
 - `time`: The elapsed time since starting this job in seconds
