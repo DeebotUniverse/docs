@@ -17,3 +17,7 @@ More information can be found in the [HA logger documentation](https://www.home-
 
     Doing this will cause your authentication token to visible in your log files.
     Be sure to remove any tokens and other authentication details from your log before posting them in an issue.
+
+!!! info
+
+    If you have multiple vacuums please add the logs only for the relevant one.
