@@ -7,3 +7,6 @@ All commands described further are listed below.
 - Volume
   - [getVolume](volume.md#getvolume)
   - [setVolume](volume.md#setvolume)
+- Water
+  - [getWaterInfo](water.md#getwaterinfo)
+  - [setWaterInfo](water.md#setwaterinfo)

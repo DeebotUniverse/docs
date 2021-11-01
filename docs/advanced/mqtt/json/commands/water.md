@@ -1,14 +1,14 @@
-# Volume commands
+# Water commands
 
-## `getVolume`
+## `getWaterInfo`
 
-Command to get information about the volume
+Command to get water information
 
 ### Request
 
 Only the name and the arguments will be described. General information can be found under [Command General](general.md#request)
 
-- Name: `getVolume`
+- Name: `getWaterInfo`
 - Arguments: None
 
 ### Response
@@ -18,25 +18,29 @@ To get information about the whole response, please refer to [Command General](g
 
 ```json
 {
-  "total": 10,
-  "volume": 10
+  "enable": 0,
+  "amount": 4
 }
 ```
 
-- `total`: The maximum supported level
-- `volume`: The current set level
+- `enable`: Indicates if mop is attached. Should be interpreted as boolean.
+- `amount`: The amount, which is currently set.
+  - `1`: low
+  - `2`: medium
+  - `3`: high
+  - `4`: ultra high
 
-## `setVolume`
+## `setWaterInfo`
 
-Command to set volume
+Command to set the water amount
 
 ### Request
 
 Only the name and the arguments will be described. General information can be found under [Command General](general.md#request)
 
-- Name: `setVolume`
+- Name: `setWaterInfo`
 - Arguments:
-  - `volume`: The level to set the volume
+  - `amount`: The water amount. Available values are specified in [getWaterInfo](#getwaterinfo).
 
 ### Response
 
