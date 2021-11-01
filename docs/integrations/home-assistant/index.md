@@ -13,7 +13,7 @@ With this Home Assistant Custom Component you'll be able to
 
 ## Supported models
 
-The supported models can be found under [models](../../general/models.md) under the column `deebot-client`.
+The supported models can be found under [models](../../home/models.md) under the column `deebot-client`.
 
 ## Thanks
 

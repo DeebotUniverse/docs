@@ -42,11 +42,11 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Home: index.md
-  - General:
-      - Projects: general/projects.md
-      - Models: general/models.md
-      - FAQ: general/faq.md
+  - Home:
+      - index.md
+      - Projects: home/projects.md
+      - Models: home/models.md
+      - FAQ: home/faq.md
   - Integrations:
       - Home Assistant:
           - integrations/home-assistant/index.md
