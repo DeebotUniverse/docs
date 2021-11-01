@@ -2,4 +2,8 @@
 
 All commands described further are listed below.
 
-- [getStats](stats.md#getstats)
+- Stats
+  - [getStats](stats.md#getstats)
+- Volume
+  - [getVolume](volume.md#getvolume)
+  - [setVolume](volume.md#setvolume)
