@@ -69,6 +69,9 @@ nav:
                   - Stats: advanced/mqtt/json/commands/stats.md
                   - Volume: advanced/mqtt/json/commands/volume.md
                   - Water: advanced/mqtt/json/commands/water.md
+              - Messages:
+                  - advanced/mqtt/json/messages/index.md
+                  - Stats: advanced/mqtt/json/messages/stats.md
           - XML:
               - Commands:
                   - advanced/mqtt/xml/commands/index.md
