@@ -61,6 +61,7 @@ nav:
               - UI:
                   - Simple: integrations/home-assistant/examples/ui/simple.md
                   - Advanced: integrations/home-assistant/examples/ui/advanced.md
+          - Migration: integrations/home-assistant/migration.md
   - Advanced:
       - MQTT:
           - JSON:

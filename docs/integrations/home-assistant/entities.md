@@ -25,14 +25,61 @@ E.g. `binary_sensor.susi_mop_attached`
             state: {{ states.vacuum.YOUR_ROBOT_NAME.attributes['fan_speed'] }}
     ```
 
-## Sensors
+!!! info
 
-| Name                   | Description                               |
-| ---------------------- | ----------------------------------------- |
-| `last_clean_image`     | A URL to the last success clean           |
-| `component_brush`      | % left of main brush                      |
-| `component_filter`     | % left of filter                          |
-| `component_side_brush` | % left of side brushes                    |
-| `stats_area`           | cleaned area of last/current cleaning job |
-| `stats_time`           | elapsed time of last/current cleaning job |
-| `stats_type`           | type of last/current cleaning job         |
+    The entities are split by their domains. In other words the domain is the header name :wink:
+
+## Binary sensor
+
+| Name           | Description                      |
+| -------------- | -------------------------------- |
+| `mop_attached` | Specifies if the mop is attached |
+
+## Camera
+
+| Name       | Description                       |
+| ---------- | --------------------------------- |
+| `live_map` | The live map (similar to the App) |
+
+## Number
+
+| Name     | Description    |
+| -------- | -------------- |
+| `volume` | Set the volume |
+
+## Select
+
+| Name           | Description                               |
+| -------------- | ----------------------------------------- |
+| `water_amount` | Set the water amount used during cleaning |
+
+## Sensor
+
+| Name                    | Description                                                          |
+| ----------------------- | -------------------------------------------------------------------- |
+| `last_cleaning_job`     | Information about the last cleaning. Details [below](#last-cleaning) |
+| `last_error`            | Last error Details [below](#last-error)                              |
+| `life_span_brush`       | % left of main brush                                                 |
+| `life_span_filter`      | % left of filter                                                     |
+| `life_span_side_brush`  | % left of side brushes                                               |
+| `stats_area`            | cleaned area of last/current cleaning job                            |
+| `stats_time`            | elapsed time of last/current cleaning job                            |
+| `stats_type`            | type of last/current cleaning job                                    |
+| `stats_total_area`      | total cleaned area                                                   |
+| `stats_total_time`      | total cleaning time                                                  |
+| `stats_total_cleanings` | total cleanings                                                      |
+
+### Last cleaning
+
+- `state`: Holding the status/stop reason
+- `attributes`
+  - `timestamp`: Timestamp, when the job was started
+  - `image_url`: Url to the map image. Hosted on the servers
+  - `type`: cleaning type
+  - `area`: cleaned area
+  - `duration`: duration in minutes
+
+### Last error
+
+- `state`: error code
+- `attributes.description`: Description for the error code, if available
