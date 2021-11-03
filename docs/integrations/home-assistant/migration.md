@@ -78,11 +78,8 @@ Please use the new event [deebot_cleaning_job](events.md#deebot_cleaning_job) in
 
 ## Steps
 
-!!! note
-
-    You don't need to delete the config entry. Leave it as it is and the new component will be using it.
-
-1. Uninstall _Deebot **for** Home Assistant_ (via Hacs)
-2. Install _Deebot **4** Home Assistant_ (via Hacs)
-3. Restart Home Assistant
-4. Adjust your config accordingly to the breaking changes, if needed.
+1. Remove all configuration of _Deebot for Home Assistant_
+2. Uninstall _Deebot **for** Home Assistant_ (via Hacs)
+3. Install _Deebot **4** Home Assistant_ (via Hacs)
+4. Restart Home Assistant
+5. Start adding all config entries again
