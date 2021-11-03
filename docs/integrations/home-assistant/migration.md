@@ -73,3 +73,16 @@ The water amount (old level) is now available as select entity. Made it easy to 
 
 - `sensor.ROBOTNAME_stats_start`: The start time can be identified via Home Assistant when the vacuum change state. Also in some cases the start time had a random time zone, so it was not really helpful.
 - `sensor.ROBOTNAME_stats_cid`: The id on the stats command is different from the id of the same cleaning job on the rest of the commands.
+
+Please use the new event [deebot_cleaning_job](events.md#deebot_cleaning_job) instead.
+
+## Steps
+
+!!! note
+
+    You don't need to delete the config entry. Leave it as it is and the new component will be using it.
+
+1. Uninstall _Deebot **for** Home Assistant_ (via Hacs)
+2. Install _Deebot **4** Home Assistant_ (via Hacs)
+3. Restart Home Assistant
+4. Adjust your config accordingly to the breaking changes, if needed.
