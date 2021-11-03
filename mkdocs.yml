@@ -34,6 +34,7 @@ markdown_extensions:
   - toc:
       permalink: true
       permalink_title: Anchor link to this section for reference
+  - pymdownx.betterem
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -61,6 +62,7 @@ nav:
               - UI:
                   - Simple: integrations/home-assistant/examples/ui/simple.md
                   - Advanced: integrations/home-assistant/examples/ui/advanced.md
+          - Migration: integrations/home-assistant/migration.md
   - Advanced:
       - MQTT:
           - JSON:
