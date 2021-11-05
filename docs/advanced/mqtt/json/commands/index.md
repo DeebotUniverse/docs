@@ -2,8 +2,10 @@
 
 All commands described further are listed below.
 
+- Map
+  - [getCachedMapInfo](map.md#getcachedmapinfo)
 - PlaySound
-  - [playSound](playSound.md)
+  - [playSound](playSound.md#playsound)
 - Stats
   - [getStats](stats.md#getstats)
 - Volume
