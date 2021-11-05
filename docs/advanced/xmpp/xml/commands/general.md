@@ -8,9 +8,9 @@ A command request look in general like:
 
 ```xml
 <iq id="[id]" to="[toId]@[toType].ecorobot.net/atom" from="[user]@ecouser.net/[toRes]" type="set">
-  <query xmlns="com:ctl">
-  <ctl td="[cmdName]" sampleAttribute="value" id="[randomid]"/>
-</query>
+    <query xmlns="com:ctl">
+        <ctl td="[cmdName]" sampleAttribute="value" id="[randomid]"/>
+    </query>
 </iq>
 ```
 
@@ -21,5 +21,7 @@ A command request look in general like:
 - `toType`: class (model) of vacuum (e.g. `115`)
 - `user`: user id given by Ecovacs API
 - `toRes`: resource of the vacuum
-- `cmdName`: command name
-- `randomid`: somewhat random string with 8 chars
+- `type`: `set`
+- `ctl`:
+  - `cmdName`: command name
+  - `randomid`: somewhat random string with 8 chars
