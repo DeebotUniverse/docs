@@ -14,4 +14,4 @@ Only the name and the arguments will be described. General information can be fo
 
 !!! info "Available sound IDs"
 
-For a list of available sound IDs see [here](https://github.com/mrbungle64/ecovacs-deebot.js/wiki/playSound#available-sound-ids)
+    For a list of available sound IDs see [here](https://github.com/mrbungle64/ecovacs-deebot.js/wiki/playSound#available-sound-ids)
