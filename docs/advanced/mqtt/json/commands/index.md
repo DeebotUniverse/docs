@@ -2,6 +2,8 @@
 
 All commands described further are listed below.
 
+- PlaySound
+  - [playSound](playSound.md)
 - Stats
   - [getStats](stats.md#getstats)
 - Volume
