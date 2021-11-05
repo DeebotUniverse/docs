@@ -91,6 +91,6 @@ nav:
       - XMPP:
           - XML:
               - Commands:
-                  - advanced/mqtt/xmpp/commands/index.md
+                  - advanced/xmpp/xml/commands/index.md
                   - General: advanced/xmpp/xml/commands/general.md
                   - PlaySound: advanced/xmpp/xml/commands/playSound.md
