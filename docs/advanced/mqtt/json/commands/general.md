@@ -88,14 +88,15 @@ In general a response looks like:
   - `code`: Error code; `0` means no error, command was executed successfully
   - `msg`: Description for the error code
 
-## Set commands
+## Execute commands
 
-Set commands have different requests, but the response has always the same schema, if not other mentioned.
+Execute commands have different requests, but the response has always the same schema, if not other mentioned.
 
 ### Response
 
-Only the `body` object will be described here.
-To get information about the whole response, please refer to [response](#response)
+{%
+   include-markdown "../../../../../include/advanced/mqtt/json/commands/request.md"
+%}
 
 ```json
 {

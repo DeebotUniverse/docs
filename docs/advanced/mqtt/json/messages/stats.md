@@ -4,8 +4,9 @@
 
 This message will be sent out on the start and on the end (stop) of a cleaning job.
 
-Only the `data` object will be described here.
-To get information about the whole message, please refer to [Messages](index.md#messages)
+{%
+   include-markdown "../../../../../include/advanced/mqtt/json/messages/general.md"
+%}
 
 ```json
 {

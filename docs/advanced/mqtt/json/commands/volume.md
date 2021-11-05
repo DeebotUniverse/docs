@@ -6,15 +6,18 @@ Command to get information about the volume
 
 ### Request
 
-Only the name and the arguments will be described. General information can be found under [Command General](general.md#request)
+{%
+   include-markdown "../../../../../include/advanced/mqtt/json/commands/request.md"
+%}
 
 - Name: `getVolume`
 - Arguments: None
 
 ### Response
 
-Only the `data` object will be described here.
-To get information about the whole response, please refer to [Command General](general.md#response)
+{%
+   include-markdown "../../../../../include/advanced/mqtt/json/commands/response.md"
+%}
 
 ```json
 {
@@ -32,12 +35,15 @@ Command to set volume
 
 ### Request
 
-Only the name and the arguments will be described. General information can be found under [Command General](general.md#request)
+{%
+   include-markdown "../../../../../include/advanced/mqtt/json/commands/request.md"
+%}
 
 - Name: `setVolume`
 - Arguments:
   - `volume`: The level to set the volume
 
-### Response
-
-Please refer to [set commands](general.md#set-commands).
+{%
+    include-markdown "../../../../../include/advanced/mqtt/json/commands/execute/response.md"
+    heading-offset=2
+%}

@@ -9,7 +9,6 @@ repos:
       - id: markdownlint
         args:
           - "--fix"
-          - "docs/**/*.md"
   - repo: https://github.com/codespell-project/codespell
     rev: v2.1.0
     hooks:
@@ -26,7 +25,6 @@ repos:
       - id: detect-private-key
       - id: no-commit-to-branch
       - id: requirements-txt-fixer
-
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.26.3
     hooks:
