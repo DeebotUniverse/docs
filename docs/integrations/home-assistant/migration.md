@@ -78,8 +78,13 @@ Please use the new event [deebot_cleaning_job](events.md#deebot_cleaning_job) in
 
 ## Steps
 
-1. Remove all configuration of _Deebot for Home Assistant_
-2. Uninstall _Deebot **for** Home Assistant_ (via Hacs)
-3. Install _Deebot **4** Home Assistant_ (via Hacs)
-4. Restart Home Assistant
-5. Start adding all config entries again
+!!! note
+
+    At least Home Assistant `2021.11.0` is required to use the integration, because entity categories are introduced in that version.
+
+1. Verify that you are running at least HA `2021.11.0`. If not please update first
+2. Remove all configuration of _Deebot for Home Assistant_
+3. Uninstall _Deebot **for** Home Assistant_ (via Hacs)
+4. Install _Deebot **4** Home Assistant_ (via Hacs)
+5. Restart Home Assistant
+6. Start adding all config entries again
