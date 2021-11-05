@@ -6,7 +6,9 @@ Command to play a sound or voice report
 
 ### Request
 
-Only the name and the arguments will be described. General information can be found under [Command General](general.md#request)
+{%
+   include-markdown "../../../../../include/advanced/mqtt/json/commands/request.md"
+%}
 
 - Name: `playSound`
 - Arguments:
@@ -15,3 +17,8 @@ Only the name and the arguments will be described. General information can be fo
 !!! info "Available sound IDs"
 
     For a list of available sound IDs see [here](https://github.com/mrbungle64/ecovacs-deebot.js/wiki/playSound#available-sound-ids)
+
+{%
+    include-markdown "../../../../../include/advanced/mqtt/json/commands/execute/response.md"
+    heading-offset=2
+%}

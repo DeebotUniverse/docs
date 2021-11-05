@@ -6,15 +6,18 @@ Command to get information about the maps.
 
 ### Request
 
-Only the name and the arguments will be described. General information can be found under [Command General](general.md#request)
+{%
+    include-markdown "../../../../../include/advanced/mqtt/json/commands/request.md"
+%}
 
 - Name: `getCachedMapInfo`
 - Arguments: None
 
 ### Response
 
-Only the `data` object will be described here.
-To get information about the whole response, please refer to [Command General](general.md#response)
+{%
+   include-markdown "../../../../../include/advanced/mqtt/json/commands/response.md"
+%}
 
 ```json
 {
