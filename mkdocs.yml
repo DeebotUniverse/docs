@@ -25,6 +25,7 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.top
+    - search.suggest
 
 markdown_extensions:
   - admonition
@@ -45,6 +46,7 @@ markdown_extensions:
 plugins:
   # https://github.com/mondeja/mkdocs-include-markdown-plugin
   - include-markdown
+  - search
 
 nav:
   - Home:
