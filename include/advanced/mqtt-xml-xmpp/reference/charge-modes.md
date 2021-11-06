@@ -1,0 +1,11 @@
+#### mode
+
+| value           | description |
+| --------------- | ----------- |
+| `Going`         | returning   |
+| `going`         | returning   |
+| `SlotCharging`  | charging    |
+| `slot_charging` | charging    |
+| `WireCharging`  | charging    |
+| `Idle`          | idle        |
+| `idle`          | idle        |
