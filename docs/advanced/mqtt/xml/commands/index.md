@@ -7,4 +7,5 @@ All commands described further are listed below.
 - PlaySound
   - [PlaySound](playSound.md)
 - WaterPermeability
-  - [WaterPermeability](waterlevel.md)
+  - [GetWaterPermeability](waterlevel.md#GetWaterPermeability)
+  - [SetWaterPermeability](waterlevel.md#SetWaterPermeability)
