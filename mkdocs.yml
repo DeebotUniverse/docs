@@ -83,6 +83,8 @@ nav:
               - Messages:
                   - advanced/mqtt/json/messages/index.md
                   - Stats: advanced/mqtt/json/messages/stats.md
+              - Reference:
+                  - Clean modes: advanced/mqtt/json/reference/clean-modes.md
           - XML:
               - Commands:
                   - advanced/mqtt/xml/commands/index.md
