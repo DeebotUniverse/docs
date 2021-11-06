@@ -87,7 +87,10 @@ nav:
               - Commands:
                   - advanced/mqtt/xml/commands/index.md
                   - General: advanced/mqtt/xml/commands/general.md
+                  - Clean: advanced/mqtt/xml/commands/clean.md
                   - PlaySound: advanced/mqtt/xml/commands/playSound.md
+              - Reference:
+                  - Clean modes: advanced/mqtt/xml/reference/clean-modes.md
       - XMPP:
           - XML:
               - Commands:
@@ -95,3 +98,5 @@ nav:
                   - General: advanced/xmpp/xml/commands/general.md
                   - Clean: advanced/xmpp/xml/commands/clean.md
                   - PlaySound: advanced/xmpp/xml/commands/playSound.md
+              - Reference:
+                  - Clean modes: advanced/xmpp/xml/reference/clean-modes.md
