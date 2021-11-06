@@ -32,6 +32,7 @@ markdown_extensions:
   - attr_list
   - mdx_truly_sane_lists
   - tables
+  - footnotes
   - toc:
       permalink: true
       permalink_title: Anchor link to this section for reference
@@ -83,6 +84,8 @@ nav:
               - Messages:
                   - advanced/mqtt/json/messages/index.md
                   - Stats: advanced/mqtt/json/messages/stats.md
+              - Reference:
+                  - Clean modes: advanced/mqtt/json/reference/clean-modes.md
           - XML:
               - Commands:
                   - advanced/mqtt/xml/commands/index.md
