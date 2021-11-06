@@ -95,6 +95,7 @@ nav:
                   - General: advanced/mqtt/xml/commands/general.md
                   - Clean: advanced/mqtt/xml/commands/clean.md
                   - PlaySound: advanced/mqtt/xml/commands/playSound.md
+                  - WaterPermeability: advanced/mqtt/xml/commands/waterlevel.md
               - Reference:
                   - Clean modes: advanced/mqtt/xml/reference/clean-modes.md
                   - Charge modes: advanced/mqtt/xml/reference/charge-modes.md
@@ -107,6 +108,7 @@ nav:
                   - General: advanced/xmpp/xml/commands/general.md
                   - Clean: advanced/xmpp/xml/commands/clean.md
                   - PlaySound: advanced/xmpp/xml/commands/playSound.md
+                  - WaterPermeability: advanced/xmpp/xml/commands/waterlevel.md
               - Reference:
                   - Clean modes: advanced/xmpp/xml/reference/clean-modes.md
                   - Charge modes: advanced/xmpp/xml/reference/charge-modes.md
