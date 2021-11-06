@@ -1,7 +1,3 @@
-Water flow level modes
-
-### mode
-
 | value | description |
 | ----- | ----------- |
 | 1     | low         |

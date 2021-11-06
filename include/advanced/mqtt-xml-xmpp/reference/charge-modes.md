@@ -1,5 +1,3 @@
-#### mode
-
 | value           | description |
 | --------------- | ----------- |
 | `Going`         | returning   |
