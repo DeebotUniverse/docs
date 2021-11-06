@@ -7,7 +7,7 @@ Command to play a sound or voice report
 ### Request
 
 {%
-include-markdown "../../../../../include/advanced/xmpp/xml/commands/request.md"
+include-markdown "../../../../../include/advanced/mqtt-xml-xmpp/commands/request.md"
 %}
 
 - Name: `PlaySound`
