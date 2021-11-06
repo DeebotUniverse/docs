@@ -86,7 +86,9 @@ nav:
                   - Stats: advanced/mqtt/json/messages/stats.md
               - Reference:
                   - Clean modes: advanced/mqtt/json/reference/clean-modes.md
-                  - Power level modes: advanced/mqtt/json/reference/clean-speed.md
+                  - Charge modes: advanced/mqtt/json/reference/charge-modes.md
+                  - Power level modes: advanced/mqtt/json/reference/cleanspeed-modes.md
+                  - Water level modes: advanced/mqtt/json/reference/waterlevel-modes.md
           - XML:
               - Commands:
                   - advanced/mqtt/xml/commands/index.md
@@ -95,7 +97,9 @@ nav:
                   - PlaySound: advanced/mqtt/xml/commands/playSound.md
               - Reference:
                   - Clean modes: advanced/mqtt/xml/reference/clean-modes.md
-                  - Power level modes: advanced/mqtt/xml/reference/clean-speed.md
+                  - Charge modes: advanced/mqtt/xml/reference/charge-modes.md
+                  - Power level modes: advanced/mqtt/xml/reference/cleanspeed-modes.md
+                  - Water level modes: advanced/mqtt/xml/reference/waterlevel-modes.md
       - XMPP:
           - XML:
               - Commands:
@@ -105,4 +109,6 @@ nav:
                   - PlaySound: advanced/xmpp/xml/commands/playSound.md
               - Reference:
                   - Clean modes: advanced/xmpp/xml/reference/clean-modes.md
-                  - Power level modes: advanced/xmpp/xml/reference/clean-speed.md
+                  - Charge modes: advanced/xmpp/xml/reference/charge-modes.md
+                  - Power level modes: advanced/xmpp/xml/reference/cleanspeed-modes.md
+                  - Water level modes: advanced/xmpp/xml/reference/waterlevel-modes.md
