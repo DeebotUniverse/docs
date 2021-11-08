@@ -77,7 +77,7 @@ nav:
   - Advanced:
       - Protocols:
           - MQTT: advanced/protocols/mqtt.md
-          - API: advanced/protocols/api.md
+          - REST: advanced/protocols/rest.md
           - XMPP: advanced/protocols/xmpp.md
       - Data types:
           - JSON:
@@ -100,3 +100,5 @@ nav:
                   - Clean: advanced/data_types/xml/commands/clean.md
                   - PlaySound: advanced/data_types/xml/commands/playSound.md
                   - WaterPermeability: advanced/data_types/xml/commands/waterlevel.md
+              - Messages:
+                  - advanced/data_types/xml/messages/index.md

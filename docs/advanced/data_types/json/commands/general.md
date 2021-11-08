@@ -3,7 +3,7 @@
 ## Request
 
 Here only the command request object will be described.
-More information about sending commands can be found under [api](../../../protocols/api.md#request).
+More information about sending commands can be found under [api](../../../protocols/rest.md#request).
 
 ```json
 {
@@ -31,7 +31,7 @@ More information about sending commands can be found under [api](../../../protoc
 ## Response
 
 Here only the command response object will be described.
-More information about sending commands can be found under [api](../../../protocols/api.md#response).
+More information about sending commands can be found under [api](../../../protocols/rest.md#response).
 
 {%
    include-markdown "../messages/general.md"
