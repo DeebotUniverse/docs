@@ -71,46 +71,28 @@ nav:
                   - Advanced: integrations/home-assistant/examples/ui/advanced.md
           - Migration: integrations/home-assistant/migration.md
   - Advanced:
-      - MQTT:
+      - Protocols:
+          - MQTT: advanced/protocols/mqtt.md
+          - API: advanced/protocols/api.md
+          - XMPP: advanced/protocols/xmpp.md
+      - Data types:
           - JSON:
               - Commands:
-                  - advanced/mqtt/json/commands/index.md
-                  - General: advanced/mqtt/json/commands/general.md
-                  - Map: advanced/mqtt/json/commands/map.md
-                  - PlaySound: advanced/mqtt/json/commands/playSound.md
-                  - Stats: advanced/mqtt/json/commands/stats.md
-                  - Volume: advanced/mqtt/json/commands/volume.md
-                  - Water: advanced/mqtt/json/commands/water.md
+                  - advanced/data_types/json/commands/index.md
+                  - General: advanced/data_types/json/commands/general.md
+                  - Map: advanced/data_types/json/commands/map.md
+                  - PlaySound: advanced/data_types/json/commands/playSound.md
+                  - Stats: advanced/data_types/json/commands/stats.md
+                  - Volume: advanced/data_types/json/commands/volume.md
+                  - Water: advanced/data_types/json/commands/water.md
               - Messages:
-                  - advanced/mqtt/json/messages/index.md
-                  - Stats: advanced/mqtt/json/messages/stats.md
-              - Reference:
-                  - Clean modes: advanced/mqtt/json/reference/clean-modes.md
-                  - Charge modes: advanced/mqtt/json/reference/charge-modes.md
-                  - Power level modes: advanced/mqtt/json/reference/cleanspeed-modes.md
-                  - Water level modes: advanced/mqtt/json/reference/waterlevel-modes.md
+                  - advanced/data_types/json/messages/index.md
+                  - General: advanced/data_types/json/messages/general.md
+                  - Stats: advanced/data_types/json/messages/stats.md
           - XML:
               - Commands:
-                  - advanced/mqtt/xml/commands/index.md
-                  - General: advanced/mqtt/xml/commands/general.md
-                  - Clean: advanced/mqtt/xml/commands/clean.md
-                  - PlaySound: advanced/mqtt/xml/commands/playSound.md
-                  - WaterPermeability: advanced/mqtt/xml/commands/waterlevel.md
-              - Reference:
-                  - Clean modes: advanced/mqtt/xml/reference/clean-modes.md
-                  - Charge modes: advanced/mqtt/xml/reference/charge-modes.md
-                  - Power level modes: advanced/mqtt/xml/reference/cleanspeed-modes.md
-                  - Water level modes: advanced/mqtt/xml/reference/waterlevel-modes.md
-      - XMPP:
-          - XML:
-              - Commands:
-                  - advanced/xmpp/xml/commands/index.md
-                  - General: advanced/xmpp/xml/commands/general.md
-                  - Clean: advanced/xmpp/xml/commands/clean.md
-                  - PlaySound: advanced/xmpp/xml/commands/playSound.md
-                  - WaterPermeability: advanced/xmpp/xml/commands/waterlevel.md
-              - Reference:
-                  - Clean modes: advanced/xmpp/xml/reference/clean-modes.md
-                  - Charge modes: advanced/xmpp/xml/reference/charge-modes.md
-                  - Power level modes: advanced/xmpp/xml/reference/cleanspeed-modes.md
-                  - Water level modes: advanced/xmpp/xml/reference/waterlevel-modes.md
+                  - advanced/data_types/xml/commands/index.md
+                  - General: advanced/data_types/xml/commands/general.md
+                  - Clean: advanced/data_types/xml/commands/clean.md
+                  - PlaySound: advanced/data_types/xml/commands/playSound.md
+                  - WaterPermeability: advanced/data_types/xml/commands/waterlevel.md
