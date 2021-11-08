@@ -9,33 +9,33 @@
 
     Which library is used by a integration can be found under the [projects page](projects.md).
 
-| Model                   |          deebot-client           |        ecovacs-deebot.js         | Protocol  |
-| ----------------------- | :------------------------------: | :------------------------------: | --------- |
-| Deebot 500/501          |         :material-close:         |         :material-check:         |           |
-| Deebot 600/601/605      |         :material-close:         |         :material-check:         | MQTT/XML  |
-| Deebot 710/711/711s     |         :material-close:         |    :material-progress-check:     | MQTT/XML  |
-| Deebot 900/901          |         :material-close:         | :fontawesome-solid-check-circle: | MQTT/XML  |
-| Deebot OZMO Slim 10/11  |         :material-close:         |         :material-check:         | MQTT/XML  |
-| Deebot OZMO 610         |         :material-close:         |         :material-check:         | XMPP      |
-| Deebot OZMO 900/905     |         :material-close:         |         :material-check:         | MQTT/XML  |
-| Deebot OZMO 920         |         :material-check:         | :fontawesome-solid-check-circle: | MQTT/JSON |
-| Deebot OZMO 930         |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      |
-| Deebot OZMO 950         | :fontawesome-solid-check-circle: | :fontawesome-solid-check-circle: | MQTT/JSON |
-| Deebot OZMO 960         |                                  |                                  |           |
-| Deebot OZMO T5          |         :material-check:         |         :material-check:         | MQTT/JSON |
-| Deebot (OZMO) T8 series |         :material-check:         |         :material-check:         | MQTT/JSON |
-| Deebot T9 series        |         :material-check:         |         :material-check:         | MQTT/JSON |
-| Deebot M88              |         :material-close:         |         :material-check:         | XMPP      |
-| Deebot N3 MAX           |                                  |                                  | MQTT/JSON |
-| Deebot N7               |                                  |                                  | MQTT/JSON |
-| Deebot N8 series        |                                  |                                  | MQTT/JSON |
-| Deebot N79 series       |         :material-close:         |         :material-check:         | XMPP      |
-| Deebot U2 series        |                                  |    :material-progress-check:     | MQTT/JSON |
-| Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      |
+| Model                   |          deebot-client           |        ecovacs-deebot.js         | Protocol  | Data type |
+| ----------------------- | :------------------------------: | :------------------------------: | --------- | --------- |
+| Deebot 500/501          |         :material-close:         |         :material-check:         |           |           |
+| Deebot 600/601/605      |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
+| Deebot 710/711/711s     |         :material-close:         |    :material-progress-check:     | REST/MQTT | XML       |
+| Deebot 900/901          |         :material-close:         | :fontawesome-solid-check-circle: | REST/MQTT | XML       |
+| Deebot OZMO Slim 10/11  |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
+| Deebot OZMO 610         |         :material-close:         |         :material-check:         | XMPP      | XML       |
+| Deebot OZMO 900/905     |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
+| Deebot OZMO 920         |         :material-check:         | :fontawesome-solid-check-circle: | REST/MQTT | JSON      |
+| Deebot OZMO 930         |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      | XML       |
+| Deebot OZMO 950         | :fontawesome-solid-check-circle: | :fontawesome-solid-check-circle: | REST/MQTT | JSON      |
+| Deebot OZMO 960         |                                  |                                  |           |           |
+| Deebot OZMO T5          |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
+| Deebot (OZMO) T8 series |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
+| Deebot T9 series        |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
+| Deebot M88              |         :material-close:         |         :material-check:         | XMPP      | XML       |
+| Deebot N3 MAX           |                                  |                                  | REST/MQTT | JSON      |
+| Deebot N7               |                                  |                                  | REST/MQTT | JSON      |
+| Deebot N8 series        |                                  |                                  | REST/MQTT | JSON      |
+| Deebot N79 series       |         :material-close:         |         :material-check:         | XMPP      | XML       |
+| Deebot U2 series        |                                  |    :material-progress-check:     | REST/MQTT | JSON      |
+| Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      | XML       |
 
 ## Legend
 
-| Icon                             | description                                                                             |
+| Icon                             | Description                                                                             |
 | -------------------------------- | --------------------------------------------------------------------------------------- |
 | :fontawesome-solid-check-circle: | Confirmed to work flawlessly and at least one of the main developers owns such a device |
 | :material-check:                 | Confirmed to work properly                                                              |
