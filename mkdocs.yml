@@ -12,11 +12,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: red
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
