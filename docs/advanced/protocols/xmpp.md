@@ -1,6 +1,4 @@
-# Commands
-
-This pages describes the general part of the commands.
+# XMPP
 
 ## Request
 

@@ -1,4 +1,4 @@
-# Mqtt
+# MQTT
 
 It is possible to subscribe for "broadcast" messages sent out asynchronous from the bot
 on the channel `iot/atr`.
@@ -20,7 +20,7 @@ The schema is the following:
 More information can be found under the respective data type:
 
 - [json](../data_types/json/messages/index.md)
-- [xml](../data_types/xml)
+- [xml](../data_types/xml/messages/index.md)
 
 ??? example "Json-example with `reportStats` message"
 

@@ -1,4 +1,4 @@
-# Api
+# API
 
 This pages describes the general part of the used rest api.
 
