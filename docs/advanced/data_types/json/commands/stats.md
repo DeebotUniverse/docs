@@ -1,27 +1,23 @@
-# Stats commands
+---
+data_type: json
+commands:
+  - name: getStats
+    description: Command to get information about the last or ongoing cleaning job.
+    response:
+      arguments:
+        area: The cleaned area in m²
+        time: The elapsed time since starting this job in seconds
+        cid: Cleaning id
+        start: Datetime, when clean job was started
+        type: The cleaning type
+      example: >-
+        {
+          "area": 36,
+          "time": 2063,
+          "cid": "111",
+          "start": "1297462509",
+          "type": "spotArea"
+        }
+---
 
-## `getStats`
-
-Command to get information about the last or ongoing cleaning job
-
-### Request
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/request.md"
-%}
-
-- Name: `getStats`
-- Arguments: None
-
-### Response
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/response.md"
-%}
-
-{%
-   include-markdown "../messages/stats.md"
-   start="<!--onStats-->"
-   end="<!--onStats-end-->"
-   heading-offset=1
-%}
+{% include 'advanced/data_types/commands-template-jinja.md' %}

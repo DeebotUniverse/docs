@@ -34,9 +34,10 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
-  - mdx_truly_sane_lists
-  - tables
   - footnotes
+  - mdx_truly_sane_lists
+  - meta
+  - tables
   - toc:
       permalink: true
       permalink_title: Anchor link to this section for reference
@@ -51,6 +52,9 @@ markdown_extensions:
 plugins:
   # https://github.com/mondeja/mkdocs-include-markdown-plugin
   - include-markdown
+  # https://github.com/fralau/mkdocs_macros_plugin
+  - macros:
+      include_dir: include
   - search
   # https://github.com/aklajnert/mkdocs-simple-hooks
   - mkdocs-simple-hooks:

@@ -1,3 +1,7 @@
+---
+ignore_macros: true
+---
+
 # UI advanced example
 
 Main feature is ability to specify via UI the order of the cleaned rooms.
