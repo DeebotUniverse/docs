@@ -50,8 +50,6 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
-  # https://github.com/mondeja/mkdocs-include-markdown-plugin
-  - include-markdown
   # https://github.com/fralau/mkdocs_macros_plugin
   - macros:
       include_dir: include

@@ -6,9 +6,7 @@ Command to start a cleaning
 
 ### Request
 
-{%
-   include-markdown "../../../../../include/advanced/data_types/xml/commands/request.md"
-%}
+Only the name and the arguments will be described.
 
 - Name: `Clean`
 - Arguments:

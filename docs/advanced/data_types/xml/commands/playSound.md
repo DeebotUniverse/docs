@@ -6,9 +6,7 @@ Command to play a sound or voice report
 
 ### Request
 
-{%
-   include-markdown "../../../../../include/advanced/data_types/xml/commands/request.md"
-%}
+Only the name and the arguments will be described.
 
 - Name: `PlaySound`
 - Arguments:

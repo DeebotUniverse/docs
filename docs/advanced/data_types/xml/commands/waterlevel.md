@@ -6,9 +6,7 @@ Command to get water level
 
 ### Request
 
-{%
-   include-markdown "../../../../../include/advanced/data_types/xml/commands/request.md"
-%}
+Only the name and the arguments will be described.
 
 - Name: `GetWaterPermeability`
 - Arguments: None
@@ -25,9 +23,12 @@ Only the payload will be described here
 
 - `v`: The amount, which is currently set
 
-  {%
-       include-markdown "../../../../../include/advanced/data_types/xml/commands/waterlevel.md"
-    %}
+  | Value | Description |
+  | ----- | ----------- |
+  | 1     | low         |
+  | 2     | medium      |
+  | 3     | high        |
+  | 4     | ultra high  |
 
 ## `SetWaterPermeability`
 
@@ -35,15 +36,16 @@ Command to set the water amount
 
 ### Request
 
-{%
-   include-markdown "../../../../../include/advanced/data_types/xml/commands/request.md"
-%}
+Only the name and the arguments will be described.
 
 - Name: `SetWaterPermeability`
 - Arguments:
 
   - `v`: The water amount
 
-    {%
-       include-markdown "../../../../../include/advanced/data_types/xml/commands/waterlevel.md"
-    %}
+    | Value | Description |
+    | ----- | ----------- |
+    | 1     | low         |
+    | 2     | medium      |
+    | 3     | high        |
+    | 4     | ultra high  |

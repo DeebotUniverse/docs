@@ -15,7 +15,7 @@ The schema is the following:
 - `resource`: the resource of the vacuum
 - `data type`: data type
 
-  {% include-markdown "../../../include/advanced/protocols/data_type.md" %}
+  {% include 'advanced/protocols/data_type.md' %}
 
 More information can be found under the respective data type:
 

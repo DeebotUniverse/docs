@@ -33,7 +33,7 @@ A command request look in general like:
   - [xml commands](../data_types/xml/commands/index.md)
 - `payloadType`:
 
-  {% include-markdown "../../../include/advanced/protocols/data_type.md" %}
+  {% include 'advanced/protocols/data_type.md' %}
 
 - `auth`: the authentication object
 - `td`: Specifier if request or response
