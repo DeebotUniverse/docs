@@ -15,8 +15,7 @@
 {%- for key, value in object.data_values.items() %}
 {{ "  " * (loop.depth0 + initial_depth + 1) }}| {{ key }} | {{ value }} |
 {%- endfor %}
-
-{%- elif object.arguments is defined %}
+{% elif object.arguments is defined %}
 {{ loop(object.arguments.items()) }}
 {%- endif %}
 {%- endif %}
