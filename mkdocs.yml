@@ -52,6 +52,10 @@ plugins:
   # https://github.com/mondeja/mkdocs-include-markdown-plugin
   - include-markdown
   - search
+  # https://github.com/aklajnert/mkdocs-simple-hooks
+  - mkdocs-simple-hooks:
+      hooks:
+        on_post_page: "plugins.children_with_subtitle:insert_children_with_subtitle"
 
 nav:
   - Home:
