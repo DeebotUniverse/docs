@@ -20,4 +20,4 @@ commands:
         }
 ---
 
-{% include 'advanced/data_types/commands-template-jinja.md' %}
+{% include 'advanced/data_types/commands-template.jinja' %}

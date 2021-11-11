@@ -3,14 +3,14 @@ repos:
     rev: v2.4.1
     hooks:
       - id: prettier
-        exclude: ".*-jinja.md$"
+        exclude: ".*.jinja$"
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.29.0
     hooks:
       - id: markdownlint
         args:
           - "--fix"
-        exclude: ".*jinja.md$"
+        exclude: ".*.jinja$"
   - repo: https://github.com/codespell-project/codespell
     rev: v2.1.0
     hooks:

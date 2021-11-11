@@ -17,4 +17,4 @@ commands:
             [here](https://github.com/mrbungle64/ecovacs-deebot.js/wiki/playSound#available-sound-ids)
 ---
 
-{% include 'advanced/data_types/commands-template-jinja.md' %}
+{% include 'advanced/data_types/commands-template.jinja' %}
