@@ -18,9 +18,9 @@ under [Command General](general.md#request).
 {%- if command.request is defined and command.request.arguments is defined %}
 - Payload arguments:
 {{ list_arguments(command.request.arguments, 1) }}
-
+{% if command.request.example is defined %}
 {{ example(command.request.example, data_type, "Example payload") }}
-
+{% endif %}
 {% else %}
 - Payload arguments: None
 {% endif %}
@@ -39,8 +39,9 @@ To get information about the whole response, please refer to
 The `data` object contains the following arguments:
 
 {{ list_arguments(command.response.arguments) }}
-
+{% if command.response.example is defined %}
 {{ example(command.response.example, data_type, "Example response") }}
+{% endif %}
 
 {% else %}
 No specific response expected, as this is a executing command.
