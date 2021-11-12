@@ -90,6 +90,7 @@ nav:
               - Commands:
                   - advanced/data_types/json/commands/index.md
                   - General: advanced/data_types/json/commands/general.md
+                  - Advanced mode: advanced/data_types/json/commands/advanced_mode.md
                   - Map: advanced/data_types/json/commands/map.md
                   - PlaySound: advanced/data_types/json/commands/playSound.md
                   - Stats: advanced/data_types/json/commands/stats.md
