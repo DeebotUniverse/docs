@@ -1,3 +1,7 @@
+---
+ignore_macros: true
+---
+
 # Entities
 
 Here you can find a short description for all entities created by this component.

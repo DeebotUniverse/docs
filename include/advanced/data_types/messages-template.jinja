@@ -1,0 +1,26 @@
+{% from 'helpers.jinja' import list_arguments, add_additional, example %}
+
+# {{ title | default(page.title) }}
+
+{%- for message in messages %}
+
+## `{{ message.name}}`
+
+This message can be received:
+{% for entry in message.receive %}
+- {{ entry }}
+{%- endfor %}
+
+Only the `data` object will be described here.
+To get information about the whole message, please refer to
+[General](general.md)
+
+The `data` object contains the following arguments:
+
+{{ list_arguments(message.arguments) }}
+
+{{ example(message.example, data_type, "Example response") }}
+
+{{ add_additional(message) }}
+
+{%- endfor %}

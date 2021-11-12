@@ -1,55 +1,35 @@
-# Water commands
+---
+data_type: json
+commands:
+  - name: getWaterInfo
+    description: Command to get water information.
+    response:
+      arguments:
+        enable: Indicates if mop is attached. Should be interpreted as boolean.
+        amount:
+          description: The amount, which is currently set.
+          <<: &amount_values
+            data_values:
+              1: low
+              2: medium
+              3: high
+              4: ultra high
+      example: >-
+        {
+          "enable": 0,
+          "amount": 4
+        }
+  - name: setWaterInfo
+    description: Command to set the water amount.
+    request:
+      arguments:
+        amount:
+          description: The water amount
+          <<: *amount_values
+      example: >-
+        {
+          "amount": 4
+        }
+---
 
-## `getWaterInfo`
-
-Command to get water information
-
-### Request
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/request.md"
-%}
-
-- Name: `getWaterInfo`
-- Arguments: None
-
-### Response
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/response.md"
-%}
-
-```json
-{
-  "enable": 0,
-  "amount": 4
-}
-```
-
-- `enable`: Indicates if mop is attached. Should be interpreted as boolean.
-- `amount`: The amount, which is currently set.
-
-  {% include-markdown "../../../../../include/advanced/data_types/json/commands/water.md" %}
-
-## `setWaterInfo`
-
-Command to set the water amount
-
-### Request
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/request.md"
-%}
-
-- Name: `setWaterInfo`
-- Arguments:
-
-  - `amount`: The water amount. Available values are specified in
-    [getWaterInfo](#getwaterinfo).
-
-    {% include-markdown "../../../../../include/advanced/data_types/json/commands/water.md" %}
-
-{%
-    include-markdown "../../../../../include/advanced/data_types/execute_command.md"
-    heading-offset=2
-%}
+{% include 'advanced/data_types/commands-template.jinja' %}

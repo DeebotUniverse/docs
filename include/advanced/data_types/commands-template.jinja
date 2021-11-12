@@ -1,0 +1,56 @@
+{% from 'helpers.jinja' import list_arguments, add_additional, example %}
+
+# {{ title | default(page.title) }}
+
+{%- for command in commands %}
+
+## `{{ command.name}}`
+
+{{ command.description }}
+
+### Request
+
+Only the name and the payload arguments will be described. General information can be found
+under [Command General](general.md#request).
+
+- Name: `{{ command.name}}`
+
+{%- if command.request is defined and command.request.arguments is defined %}
+- Payload arguments:
+{{ list_arguments(command.request.arguments, 1) }}
+{% if command.request.example is defined %}
+{{ example(command.request.example, data_type, "Example payload") }}
+{% endif %}
+{% else %}
+- Payload arguments: None
+{% endif %}
+
+{%- if command.request is defined %}
+{{ add_additional(command.request) }}
+{% endif %}
+
+### Response
+
+{% if command.response is defined and command.response.arguments is defined%}
+Only the `data` object will be described here.
+To get information about the whole response, please refer to
+[Command General](general.md#response).
+
+The `data` object contains the following arguments:
+
+{{ list_arguments(command.response.arguments) }}
+{% if command.response.example is defined %}
+{{ example(command.response.example, data_type, "Example response") }}
+{% endif %}
+
+{% else %}
+No specific response expected, as this is a executing command.
+General information about responses can be found under
+[rest](../../../protocols/rest.md#response).
+{% endif %}
+
+{%- if command.response is defined %}
+{{ add_additional(command.response) }}
+{% endif %}
+
+{%- endfor %}

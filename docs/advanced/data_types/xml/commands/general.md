@@ -44,7 +44,7 @@ In general a response looks like:
 ```json
 {
   "ret": "ok",
-  "resp": "[Command respone]",
+  "resp": "[Command response]",
   "id": "[id]"
 }
 ```

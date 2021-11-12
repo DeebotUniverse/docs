@@ -1,49 +1,26 @@
-# Volume commands
+---
+data_type: json
+commands:
+  - name: getVolume
+    description: Command to get information about the volume.
+    response:
+      arguments:
+        total: The maximum supported level
+        volume: The current set level
+      example: >-
+        {
+          "total": 10,
+          "volume": 10
+        }
+  - name: setVolume
+    description: Command to set the volume.
+    request:
+      arguments:
+        volume: The level to set the volume to it
+      example: >-
+        {
+          "volume": 10
+        }
+---
 
-## `getVolume`
-
-Command to get information about the volume
-
-### Request
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/request.md"
-%}
-
-- Name: `getVolume`
-- Arguments: None
-
-### Response
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/response.md"
-%}
-
-```json
-{
-  "total": 10,
-  "volume": 10
-}
-```
-
-- `total`: The maximum supported level
-- `volume`: The current set level
-
-## `setVolume`
-
-Command to set volume
-
-### Request
-
-{%
-   include-markdown "../../../../../include/advanced/data_types/json/commands/request.md"
-%}
-
-- Name: `setVolume`
-- Arguments:
-  - `volume`: The level to set the volume
-
-{%
-    include-markdown "../../../../../include/advanced/data_types/execute_command.md"
-    heading-offset=2
-%}
+{% include 'advanced/data_types/commands-template.jinja' %}
