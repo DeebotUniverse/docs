@@ -20,8 +20,9 @@ A command request look in general like:
 - `user`: user id given by Ecovacs API
 - `toRes`: resource of the vacuum
 - `type`: always `set`
-- `cmdName`: command name
-- `randomid`: somewhat random string with 8 chars
+- payload (see also data type [XML](../data_types/xml/commands/general.md#request-and-response-description)):
+  - `cmdName`: command name
+  - `randomid`: somewhat random string with 8 chars
 
 ## Response
 
@@ -39,11 +40,14 @@ In general a response looks like:
 
 ### Response description
 
-- `id`: id
 - `toId`: did of the vacuum
 - `toType`: class (model) of vacuum (e.g. `115`)
 - `user`: user id given by Ecovacs API
 - `toRes`: resource of the vacuum
 - `type`: always `set`
+- `id`: id
+- `ret`: status
 - `randomid`: random id that was sent (see [Request description](#request-description))
-- `cmdName`: command that was sent (see [Request description](#request-description))
+- payload (see also data type [XML](../data_types/xml/commands/general.md#request-and-response-description)):
+  - `cmdName`: command that was sent
+  - `sampleAttribute`: a sample attribute (e.g. `act`)
