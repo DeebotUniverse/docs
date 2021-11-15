@@ -9,6 +9,11 @@ So I decided to fork the project under a new organization [DeebotUniverse](https
 
 ## Breaking changes
 
+!!! note
+
+    This migration describes the breaking changes versus the version `0.1.1`.
+    For other versions please read the release notes.
+
 ### Camera
 
 The live map was renamed to have a consistent naming schema.
