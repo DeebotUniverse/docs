@@ -32,7 +32,7 @@ stats:
     - entity_id: sensor.YOURROBOTNAME_stats_time
       unit: min
       subtitle: Time
-actions:
+shortcuts:
   - service: script.CLEAN_LIVINGROOM
     icon: "mdi:sofa"
   - service: script.CLEAN_BEDROOM
