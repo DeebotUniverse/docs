@@ -26,7 +26,7 @@ E.g. `binary_sensor.susi_mop_attached`
     template:
       - sensor:
           - name: "Vacuum fan speed"
-            state: {{ states.vacuum.YOUR_ROBOT_NAME.attributes['fan_speed'] }}
+            state: "{{ states.vacuum.YOUR_ROBOT_NAME.attributes['fan_speed'] }}"
     ```
 
 !!! info
