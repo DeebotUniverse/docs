@@ -19,8 +19,12 @@ For this setup to work, you need some custom components (all available via HACS)
 
 ## Configuration
 
-This example needs also a backend configuration for the templates and scripts.
-My vacuum has the name _"susi"_, please change it accordingly.
+Below you can find the snippets for this example including the backend configuration.
+Adjust it for your needs.
+
+!!! todo
+
+    Please change the of the entities accordingly. My vacuum has the name _"susi"_.
 
 ## Backend (configuration.yaml)
 
@@ -189,4 +193,68 @@ cards:
           service_data:
             queue: deebot_susi_queue
             room: living_room
+
+  # Buttons
+  - type: horizontal-stack
+    cards:
+      - type: custom:button-card
+        color: var(--disabled-text-color)
+        entity: variable.deebot_susi_queue
+        icon: mdi:google-play
+        name: Starte Putzvorgang
+        tap_action:
+          action: call-service
+          service: script.deebot_clean
+        lock:
+          enabled: |
+            [[[ 
+              return !entity.state || 
+                entity.state.length === 0 ||
+                !(['docked', 'idle'].includes(states['vacuum.susi'].state))
+            ]]]
+          exemptions: []
+        styles:
+          card:
+            - height: 80px
+            - color: var(--disabled-text-color)
+          lock:
+            - color: var(--primary-text-color)
+        state:
+          - operator: template
+            value: >
+              [[[ return !(['docked',
+              'idle'].includes(states['vacuum.susi'].state)) ]]]
+            name: Putze...
+            icon: mdi:cog
+            spin: true
+          - operator: template
+            value: |
+              [[[ return (entity.state || entity.state.length > 0) ]]]
+            styles:
+              card:
+                - color: var(--text-color)
+              icon:
+                - color: var(--text-color)
+      - type: custom:button-card
+        color: auto
+        icon: mdi:map-marker
+        name: Lokalisieren
+        tap_action:
+          action: call-service
+          service: vacuum.locate
+          service_data:
+            entity_id: vacuum.susi
+        styles:
+          card:
+            - height: 80px
+            - background-color: var(-color)
+  # live map
+  - type: picture-entity
+    entity: camera.susi_live_map
+    tap_action:
+      action: none
+    hold_action:
+      action: none
+    show_state: false
+    show_name: false
 ```
