@@ -3,7 +3,7 @@ data_type: json
 commands:
   - name: resetLifeSpan
     description: Command to reset an accessories component.
-    response:
+    request:
       arguments:
         type:
           description: The corresponding value for the component.

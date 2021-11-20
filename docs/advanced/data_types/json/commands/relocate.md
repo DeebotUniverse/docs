@@ -5,12 +5,11 @@ commands:
     description: Locating the position of the bot.
     request:
       arguments:
-        mode: `manu`
+        mode: "manu"
       example: >-
         {
           "mode": "manu"
         }
-
 ---
 
 {% include 'advanced/data_types/commands-template.jinja' %}
