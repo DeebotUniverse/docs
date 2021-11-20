@@ -32,6 +32,7 @@
 | Deebot N79 series       |         :material-close:         |         :material-check:         | XMPP      | XML       |
 | Deebot U2 series        |                                  |    :material-progress-check:     | REST/MQTT | JSON      |
 | Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      | XML       |
+| Deebot X1 Omni          |                                  |         :material-check:         | REST/MQTT | JSON      |
 
 ## Legend
 
