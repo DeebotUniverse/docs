@@ -27,8 +27,8 @@ commands:
               type:
                 description: The corresponding value for the component.
                 <<: *component_values
-            left: Number how much is left
-            total: Number with the total life time
+            left: Left lifetime in minutes
+            total: Total lifetime in minutes
       example: >-
         [
           { "type": "sideBrush", "left": 0, "total": 9000 },
