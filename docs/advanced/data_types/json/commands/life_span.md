@@ -27,7 +27,7 @@ commands:
               type:
                 description: The corresponding value for the component.
                 <<: *component_values
-            left: Left lifetime in minutes
+            left: Remaining lifetime in minutes
             total: Total lifetime in minutes
       example: >-
         [
