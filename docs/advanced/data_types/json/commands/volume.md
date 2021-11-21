@@ -23,4 +23,4 @@ commands:
         }
 ---
 
-{% include 'advanced/data_types/commands-template.jinja' %}
+{% include 'advanced/data_types/commands-template.jinja2' %}

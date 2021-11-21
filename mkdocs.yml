@@ -93,10 +93,10 @@ nav:
                   - Advanced mode: advanced/data_types/json/commands/advanced_mode.md
                   - Break point: advanced/data_types/json/commands/break_point.md
                   - Carpet pressure: advanced/data_types/json/commands/carpet_pressure.md
+                  - Life span: advanced/data_types/json/commands/life_span.md
                   - Map: advanced/data_types/json/commands/map.md
                   - Play sound: advanced/data_types/json/commands/play_sound.md
                   - Relocate: advanced/data_types/json/commands/relocate.md
-                  - Reset life span: advanced/data_types/json/commands/reset_life_span.md
                   - Stats: advanced/data_types/json/commands/stats.md
                   - Volume: advanced/data_types/json/commands/volume.md
                   - Water: advanced/data_types/json/commands/water.md
