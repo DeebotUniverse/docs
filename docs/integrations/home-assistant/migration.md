@@ -68,6 +68,11 @@ Room attributes are now group under one attribute `rooms`.
   </tbody>
 </table>
 
+!!! note
+
+      If you are using the advanced UI example, you need to update it accordingly. Backend and frontend changes are required.
+      Please compare it with the [updated version](examples/ui/advanced.md).
+
 ### Water amount
 
 The water amount (old level) is now available as select entity. Made it easy to know all available values and change it directly in the UI.
