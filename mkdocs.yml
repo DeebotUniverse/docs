@@ -103,6 +103,7 @@ nav:
               - Messages:
                   - advanced/data_types/json/messages/index.md
                   - General: advanced/data_types/json/messages/general.md
+                  - Map: advanced/data_types/json/messages/map.md
                   - Stats: advanced/data_types/json/messages/stats.md
           - XML:
               - Commands:

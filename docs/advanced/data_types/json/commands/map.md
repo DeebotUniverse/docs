@@ -35,6 +35,44 @@ commands:
             }
           ]
         }
+  - name: getMapSubSet
+    description: Command to get map subset information.
+    request:
+      arguments:
+        msid: Map set id
+        <<: &arguments
+          mid: Map id
+          type:
+            description: The type of map set
+            data_values:
+              ar: Rooms
+              vw: Virtual walls
+              mw: No mopping zones
+          mssid: Map subset id [^1]
+      example: >-
+        {
+          "mid": "199390082",
+          "msid": "8",
+          "type": "ar",
+          "mssid": "17"
+        }
+    response:
+      arguments:
+        <<: *arguments
+        value: List of coordinates
+        subtype: Room type [^1]
+        connections: Connections to other rooms [^1]
+      example: >-
+        {
+          "type": "ar",
+          "mssid": "12",
+          "value": "-2700,-7450;-2700,-6750;-2550,-6650;...",
+          "subtype": "12",
+          "connections": "17,14,10,11,13,7",
+          "mid": "199390082"
+        }
 ---
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
+
+[^1]: Only present when `type` = `ar`
