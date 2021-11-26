@@ -13,7 +13,7 @@ commands:
               2: medium
               3: high
               4: ultra high
-  - name: setWaterInfo
+  - name: SetWaterPermeability
     description: Command to set the water level.
     request:
       arguments:
