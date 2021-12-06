@@ -31,7 +31,7 @@ commands:
       additional: >-
         !!! info
 
-            `speed` is only necessary for a few models (e.g. Deebot 710 series) 
+            `speed` is only necessary for a few models (e.g. Deebot 710 series)
 ---
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
