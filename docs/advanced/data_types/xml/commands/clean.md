@@ -24,7 +24,7 @@ commands:
                 r: resume
                 h: stop
             speed:
-              description: clean speed
+              description: vacuum power
               data_values:
                 standard: standard
                 strong: strong
