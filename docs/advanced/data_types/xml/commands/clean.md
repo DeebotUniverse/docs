@@ -23,6 +23,15 @@ commands:
                 p: pause
                 r: resume
                 h: stop
+            speed:
+              description: clean speed
+              data_values:
+                standard: standard
+                strong: strong
+      additional: >-
+        !!! info
+
+            `speed` is only necessary for a few models (e.g. Deebot 710 series) 
 ---
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
