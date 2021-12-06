@@ -13,7 +13,7 @@
 | ----------------------- | :------------------------------: | :------------------------------: | --------- | --------- |
 | Deebot 500/501          |         :material-close:         |         :material-check:         |           |           |
 | Deebot 600/601/605      |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
-| Deebot 710/711/711s     |         :material-close:         |    :material-progress-check:     | REST/MQTT | XML       |
+| Deebot 710/711/711s     |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
 | Deebot 900/901          |         :material-close:         | :fontawesome-solid-check-circle: | REST/MQTT | XML       |
 | Deebot OZMO Slim 10/11  |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
 | Deebot OZMO 610         |         :material-close:         |         :material-check:         | XMPP      | XML       |
