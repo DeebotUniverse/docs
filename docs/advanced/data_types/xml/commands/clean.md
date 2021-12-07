@@ -27,7 +27,7 @@ commands:
               description: vacuum power
               data_values:
                 standard: standard
-                strong: strong
+                strong: max
       additional: >-
         !!! info
 
