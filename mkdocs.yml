@@ -110,7 +110,8 @@ nav:
                   - advanced/data_types/xml/commands/index.md
                   - General: advanced/data_types/xml/commands/general.md
                   - Clean: advanced/data_types/xml/commands/clean.md
-                  - PlaySound: advanced/data_types/xml/commands/playSound.md
-                  - WaterPermeability: advanced/data_types/xml/commands/waterlevel.md
+                  - Clean speed: advanced/data_types/xml/commands/cleanSpeed.md
+                  - Play sound: advanced/data_types/xml/commands/playSound.md
+                  - Water: advanced/data_types/xml/commands/waterlevel.md
               - Messages:
                   - advanced/data_types/xml/messages/index.md
