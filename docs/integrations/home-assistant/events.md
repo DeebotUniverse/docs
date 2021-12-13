@@ -13,12 +13,14 @@ Will be fired on start and end of a cleaning job and has the following structure
 The following keys are only available at the end of a cleaning:
 
 - `area`: cleaned area
-- `rooms`: scheduled rooms to be cleaned
+- `content`: Depends on the `type`
+  - Ids of the rooms, when `type=spotArea`
+  - Coordinates when `type=customArea`
 - `time`: duration in seconds
 
 !!! note
 
-    When `status=finished` then the scheduled rooms are cleaned. Otherwise we cannot be sure.
+    When `status=finished` than the content can be trusted to be cleaned. Otherwise we cannot be sure.
     The vacuum unfortunately only sends this inaccurate status.
 
 ## `deebot_custom_command`
