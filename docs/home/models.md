@@ -14,13 +14,13 @@
 | Deebot 500/501          |         :material-close:         |         :material-check:         |           |           |
 | Deebot 600/601/605      |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
 | Deebot 710/711/711s     |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
-| Deebot 900/901          |         :material-close:         | :fontawesome-solid-check-circle: | REST/MQTT | XML       |
+| Deebot 900/901          |         :material-close:         | :fontawesome-solid-check-double: | REST/MQTT | XML       |
 | Deebot OZMO Slim 10/11  |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
 | Deebot OZMO 610         |         :material-close:         |         :material-check:         | XMPP      | XML       |
 | Deebot OZMO 900/905     |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
-| Deebot OZMO 920         |         :material-check:         | :fontawesome-solid-check-circle: | REST/MQTT | JSON      |
-| Deebot OZMO 930         |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      | XML       |
-| Deebot OZMO 950         | :fontawesome-solid-check-circle: | :fontawesome-solid-check-circle: | REST/MQTT | JSON      |
+| Deebot OZMO 920         |         :material-check:         | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
+| Deebot OZMO 930         |         :material-close:         | :fontawesome-solid-check-double: | XMPP      | XML       |
+| Deebot OZMO 950         | :fontawesome-solid-check-double: | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
 | Deebot OZMO 960         |                                  |                                  |           |           |
 | Deebot OZMO T5          |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
 | Deebot (OZMO) T8 series |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
@@ -31,14 +31,14 @@
 | Deebot N8 series        |                                  |                                  | REST/MQTT | JSON      |
 | Deebot N79 series       |         :material-close:         |         :material-check:         | XMPP      | XML       |
 | Deebot U2 series        |                                  |    :material-progress-check:     | REST/MQTT | JSON      |
-| Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-circle: | XMPP      | XML       |
+| Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-double: | XMPP      | XML       |
 | Deebot X1 Omni          |                                  |         :material-check:         | REST/MQTT | JSON      |
 
 ## Legend
 
 | Icon                             | Description                                                                             |
 | -------------------------------- | --------------------------------------------------------------------------------------- |
-| :fontawesome-solid-check-circle: | Confirmed to work flawlessly and at least one of the main developers owns such a device |
+| :fontawesome-solid-check-double: | Confirmed to work flawlessly and at least one of the main developers owns such a device |
 | :material-check:                 | Confirmed to work properly                                                              |
 | :material-progress-check:        | Confirmed to work partially                                                             |
 | :material-close:                 | Currently no support                                                                    |
