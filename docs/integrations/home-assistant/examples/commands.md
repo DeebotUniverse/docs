@@ -58,7 +58,7 @@ data:
 
     Also the coordinates will be logged on `debug`. After activating debug logs, you can search your logs for `Last custom area values (x1,y1,x2,y2):` to get the coordinates.
 
-## Empty dustbin to aute-empty station
+## Empty dustbin to auto-empty station
 
 ```yaml
 # Customize Clean
