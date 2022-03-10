@@ -25,7 +25,7 @@ More information about sending commands can be found under [api](../../../protoc
   - `ts`: current timestamp
   - `tz`: time zone
   - `ver`: version
-- `body`: Missing, when command has no args
+- `body`: missing, when command has no args
   - `data`: object with the command arguments.
 
 ## Response
