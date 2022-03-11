@@ -114,4 +114,5 @@ nav:
                   - Play sound: advanced/data_types/xml/commands/playSound.md
                   - Water: advanced/data_types/xml/commands/waterlevel.md
               - Messages:
+                  - advanced/data_types/xml/messages/general.md
                   - advanced/data_types/xml/messages/index.md
