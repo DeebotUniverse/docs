@@ -2,16 +2,18 @@
 
 A message looks like:
 
-```json
-{
-  "ret": "ok",
-  "resp": "[data]",
-  "id": "ho3y"
-}
+```xml
+<ctl ts='[timestamp]' td='[command]'>
+    <playload attribute='value'/>
+</ctl>
 ```
 
-## Description
+??? example "XML example with `CleanReport` message"
 
-- `ret`: status
-- `resp`: holding the actual XML data. See specific description
-- `id`: the message id
+    This example message was published on `iot/atr/CleanReport/[did]/[class]/[resource]/x` for a Deebot 901 device.
+
+    ```xml
+    <ctl ts='1647080016429' td='CleanReport'>
+        <clean type='auto' speed='standard' st='h' rsn='a' a='' l='' sts=''/>
+    </ctl>
+    ```
