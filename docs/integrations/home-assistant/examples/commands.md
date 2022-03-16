@@ -57,3 +57,17 @@ data:
     3. At the end of the job you can find your coordinates under `data->content`
 
     Also the coordinates will be logged on `debug`. After activating debug logs, you can search your logs for `Last custom area values (x1,y1,x2,y2):` to get the coordinates.
+
+## Empty dustbin with auto-empty station
+
+Manually start empting the dustbin, when the robot is docked on a auto-empty station.
+
+```yaml
+service: vacuum.send_command
+target:
+  entity_id: vacuum.YOUR_ROBOT_NAME
+data:
+  command: setAutoEmpty
+  params:
+    act: start
+```
