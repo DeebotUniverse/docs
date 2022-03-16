@@ -60,7 +60,7 @@ data:
 
 ## Empty dustbin with auto-empty station
 
-Manually start empting the dustbin, when the robot is dokced on a auto-empty station.
+Manually start empting the dustbin, when the robot is docked on a auto-empty station.
 
 ```yaml
 service: vacuum.send_command
