@@ -24,7 +24,8 @@ Adjust it for your needs.
 
 !!! todo
 
-    Please change the of the entities accordingly. My vacuum has the name _"susi"_.
+    Please change the of the entities accordingly, most lines are anotated with "change me".
+    My vacuum has the name _"susi"_.
 
 ## Backend (configuration.yaml)
 
@@ -33,9 +34,8 @@ script:
   deebot_clean:
     description: Start a deebot cleaning task
     variables:
-      # The queue variable
-      queue: variable.deebot_susi_queue
-      vacuum_bot: vacuum.susi
+      queue: variable.deebot_susi_queue # change me
+      vacuum_bot: vacuum.susi # change me
     sequence:
       - alias: Get room numbers
         variables:
@@ -84,66 +84,150 @@ script:
 recorder:
   exclude:
     entities:
-      - variable.deebot_susi_queue
+      - variable.deebot_susi_queue # change me
       - script.deebot_room_queue
     entity_globs:
-      - sensor.deebot_susi_queue_*
+      - sensor.deebot_*_queue_*
 
 variable:
-  deebot_susi_queue:
-    name: Susi Raum Reihenfolge
+  deebot_susi_queue: # change me
+    name: Susi Raum Reihenfolge # change me
     value: ""
     restore: false
 
 # Room name comes from the integration to match attribute names
 template:
-  unique_id: deebot_susi_queue
+  unique_id: deebot_susi_queue # change me
   trigger:
     - platform: homeassistant
       event: start
     - platform: state
-      entity_id: variable.deebot_susi_queue
+      entity_id: variable.deebot_susi_queue # change me
   sensor:
-    # Add for each room the following. Change "living_room" accordingly
-    - unique_id: deebot_susi_queue_living_room
-      name: deebot_susi_queue_living_room
+    # Add for each room the following. Change room_name accordingly
+    - unique_id: deebot_susi_queue_living_room # change me
+      name: deebot_susi_queue_living_room # change me
+      # room_name must match the room name provided by the vacuum
       state: >
+        {% set room_name = "living_room" %}
         {% set queue = trigger.to_state.state.split(",") if trigger.to_state is defined else "" %}
-        {{ queue.index('living_room')+1 if 'living_room' in queue else 0 }}
+        {{ queue.index(room_name)+1 if room_name in queue else 0 }}
 ```
 
 ### UI configuration
+
+In the UI we use button card templates to reduce duplicate code. More information can be found in their [documentation](https://github.com/custom-cards/button-card#Configuration-Templates).
+
+```yaml
+button_card_templates:
+  vacuum_service:
+    color: var(--text-color)
+    entity: vacuum.susi # change me
+    tap_action:
+      action: call-service
+      service_data:
+        entity_id: vacuum.susi # change me
+    lock:
+      enabled: |
+        [[[ return variables.enabled ]]]
+      exemptions: []
+    styles:
+      card:
+        - height: 80px
+      lock:
+        - color: var(--primary-text-color)
+    state:
+      - operator: template
+        value: |
+          [[[ return variables.enabled ]]]
+        styles:
+          card:
+            - color: var(--disabled-text-color)
+  vacuum_room:
+    color: var(--text-color)
+    variables:
+      # change me
+      lock_enabled: >
+        [[[ return ['cleaning', 'paused'].includes(states['vacuum.susi'].state)
+        ]]]
+    state:
+      - operator: template
+        value: |
+          [[[ return variables.lock_enabled && entity.state == 0 ]]]
+        styles:
+          card:
+            - color: var(--disabled-text-color)
+      - styles:
+          card:
+            - background-color: var(--primary-color)
+        operator: ">="
+        value: 1
+    styles:
+      card:
+        - font-size: 12px
+      grid:
+        - position: relative
+      custom_fields:
+        order:
+          - display: |
+              [[[
+                if (entity.state == "0")
+                  return "none";
+                return "block";
+              ]]]
+          - position: absolute
+          - left: 5%
+          - top: 5%
+          - height: 20px
+          - width: 20px
+          - font-size: 20px
+          - font-weight: bold
+          - line-height: 20px
+    custom_fields:
+      order: |
+        [[[ return entity.state ]]]
+    tap_action:
+      action: call-service
+      service: script.deebot_room_queue
+      service_data:
+        queue: deebot_susi_queue # change me
+    lock:
+      enabled: |
+        [[[ return variables.lock_enabled ]]]
+      exemptions: []
+```
+
+Below the actual card configuration
 
 ```yaml
 type: vertical-stack
 cards:
   - type: custom:vacuum-card
-    entity: vacuum.susi
+    entity: vacuum.susi # change me
     stats:
       default:
-        - entity_id: sensor.susi_life_span_brush
+        - entity_id: sensor.susi_life_span_brush # change me
           unit: "%"
-          subtitle: Hauptbürste
-        - entity_id: sensor.susi_life_span_side_brush
+          subtitle: Hauptbürste # change me
+        - entity_id: sensor.susi_life_span_side_brush # change me
           unit: "%"
-          subtitle: Seitenbürsten
-        - entity_id: sensor.susi_life_span_filter
+          subtitle: Seitenbürsten # change me
+        - entity_id: sensor.susi_life_span_filter # change me
           unit: "%"
-          subtitle: Filter
+          subtitle: Filter # change me
       cleaning:
-        - entity_id: sensor.susi_stats_area
+        - entity_id: sensor.susi_stats_area # change me
           unit: m²
-          subtitle: Geputzte Fläche
-        - entity_id: sensor.susi_stats_time
+          subtitle: Geputzte Fläche # change me
+        - entity_id: sensor.susi_stats_time # change me
           unit: Minuten
-          subtitle: Reinigungsdauer
+          subtitle: Reinigungsdauer # change me
     show_status: true
-    show_toolbar: true
-    compact_view: false
-    image: /local/deebot950.svg
+    show_toolbar: false
+    compact_view: true
   - type: custom:button-card
     color: auto-no-temperature
-    name: Räume zum Putzen auswählen
+    name: Räume zum Putzen auswählen # change me
     styles:
       card:
         - font-size: 18px
@@ -152,105 +236,115 @@ cards:
         - color: var(--primary-color)
   - type: horizontal-stack
     cards:
-      # Add the following chard for each room. Change room values accordingly
+      # Add the following chard for each room. Change values accordingly
       - type: custom:button-card
-        entity: sensor.deebot_susi_queue_living_room
-        icon: mdi:sofa
-        name: Wohnzimmer
-        state:
-          - styles:
-              card:
-                - background-color: var(--primary-color)
-            operator: ">="
-            value: 1
-        styles:
-          card:
-            - font-size: 12px
-          grid:
-            - position: relative
-          custom_fields:
-            notification:
-              - display: |
-                  [[[
-                    if (entity.state == "0")
-                      return "none";
-                    return "block";
-                  ]]]
-              - position: absolute
-              - right: 5%
-              - top: 5%
-              - height: 20px
-              - width: 20px
-              - font-size: 20px
-              - font-weight: bold
-              - line-height: 20px
-        custom_fields:
-          notification: |
-            [[[ return entity.state ]]]
+        template: vacuum_room
+        entity: sensor.deebot_susi_queue_living_room # change me
+        icon: mdi:sofa # change me
+        name: Wohnzimmer # change me
         tap_action:
-          action: call-service
-          service: script.deebot_room_queue
           service_data:
-            queue: deebot_susi_queue
-            room: living_room
+            room: living_room # change me
 
-  # Buttons
+  - type: horizontal-stack
+    cards:
+      - type: conditional
+        conditions:
+          - entity: vacuum.susi # change me
+            state_not: cleaning
+          - entity: vacuum.susi # change me
+            state_not: paused
+        card:
+          type: custom:button-card
+          template: vacuum_service
+          icon: mdi:play
+          name: Start # change me
+          tap_action:
+            action: call-service
+            service: script.deebot_clean
+          variables:
+            # change me
+            enabled: |
+              [[[ 
+                return ((!states['variable.deebot_susi_queue'].state || 
+                    states['variable.deebot_susi_queue'].state.length === 0)
+                    && ['docked', 'idle', 'error', 'returning'].includes(entity.state))
+              ]]]
+      - type: conditional
+        conditions:
+          - entity: vacuum.susi # change me
+            state: cleaning
+        card:
+          type: custom:button-card
+          color: auto
+          icon: mdi:pause
+          name: Pause # change me
+          tap_action:
+            action: call-service
+            service: vacuum.pause
+            service_data:
+              entity_id: vacuum.susi # change me
+          styles:
+            card:
+              - height: 80px
+              - background-color: var(-color)
+      - type: conditional
+        conditions:
+          - entity: vacuum.susi # change me
+            state: paused
+        card:
+          type: custom:button-card
+          color: auto
+          icon: mdi:play-pause
+          name: Weiter # change me
+          tap_action:
+            action: call-service
+            service: vacuum.start
+            service_data:
+              entity_id: vacuum.susi # change me
+          styles:
+            card:
+              - height: 80px
+              - background-color: var(-color)
+      - type: custom:button-card
+        template: vacuum_service
+        icon: mdi:stop
+        name: Stop # change me
+        tap_action:
+          service: vacuum.stop
+        variables:
+          enabled: |
+            [[[ 
+              return !(['cleaning', 'paused', 'returning'].includes(entity.state))
+            ]]]
   - type: horizontal-stack
     cards:
       - type: custom:button-card
-        color: var(--disabled-text-color)
-        entity: variable.deebot_susi_queue
-        icon: mdi:google-play
-        name: Starte Putzvorgang
+        template: vacuum_service
+        icon: mdi:home-map-marker
+        name: Zurück zur Ladestation # change me
         tap_action:
-          action: call-service
-          service: script.deebot_clean
-        lock:
+          service: vacuum.return_to_base
+        variables:
           enabled: |
             [[[ 
-              return !entity.state || 
-                entity.state.length === 0 ||
-                !(['docked', 'idle'].includes(states['vacuum.susi'].state))
+              return ['docked', 'returning'].includes(entity.state)
             ]]]
-          exemptions: []
-        styles:
-          card:
-            - height: 80px
-            - color: var(--disabled-text-color)
-          lock:
-            - color: var(--primary-text-color)
-        state:
-          - operator: template
-            value: >
-              [[[ return !(['docked',
-              'idle'].includes(states['vacuum.susi'].state)) ]]]
-            name: Putze...
-            icon: mdi:cog
-            spin: true
-          - operator: template
-            value: |
-              [[[ return (entity.state || entity.state.length > 0) ]]]
-            styles:
-              card:
-                - color: var(--text-color)
-              icon:
-                - color: var(--text-color)
       - type: custom:button-card
         color: auto
         icon: mdi:map-marker
-        name: Lokalisieren
+        name: Lokalisieren # change me
         tap_action:
           action: call-service
           service: vacuum.locate
           service_data:
-            entity_id: vacuum.susi
+            entity_id: vacuum.susi # change me
         styles:
           card:
             - height: 80px
             - background-color: var(-color)
-  # live map
   - type: picture-entity
-    entity: camera.susi_live_map
+    entity: camera.susi_live_map # change me
     tap_action:
       action: none
     hold_action:
