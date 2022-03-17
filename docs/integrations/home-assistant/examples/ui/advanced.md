@@ -208,26 +208,26 @@ cards:
       default:
         - entity_id: sensor.susi_life_span_brush # change me
           unit: "%"
-          subtitle: Hauptbürste # change me
+          subtitle: Hauptbürste
         - entity_id: sensor.susi_life_span_side_brush # change me
           unit: "%"
-          subtitle: Seitenbürsten # change me
+          subtitle: Seitenbürsten
         - entity_id: sensor.susi_life_span_filter # change me
           unit: "%"
-          subtitle: Filter # change me
+          subtitle: Filter
       cleaning:
         - entity_id: sensor.susi_stats_area # change me
           unit: m²
-          subtitle: Geputzte Fläche # change me
+          subtitle: Geputzte Fläche
         - entity_id: sensor.susi_stats_time # change me
           unit: Minuten
-          subtitle: Reinigungsdauer # change me
+          subtitle: Reinigungsdauer
     show_status: true
     show_toolbar: false
     compact_view: true
   - type: custom:button-card
     color: auto-no-temperature
-    name: Räume zum Putzen auswählen # change me
+    name: Räume zum Putzen auswählen
     styles:
       card:
         - font-size: 18px
@@ -240,8 +240,8 @@ cards:
       - type: custom:button-card
         template: vacuum_room
         entity: sensor.deebot_susi_queue_living_room # change me
-        icon: mdi:sofa # change me
-        name: Wohnzimmer # change me
+        icon: mdi:sofa
+        name: Wohnzimmer
         tap_action:
           service_data:
             room: living_room # change me
@@ -258,7 +258,7 @@ cards:
           type: custom:button-card
           template: vacuum_service
           icon: mdi:play
-          name: Start # change me
+          name: Start
           tap_action:
             action: call-service
             service: script.deebot_clean
@@ -278,7 +278,7 @@ cards:
           type: custom:button-card
           color: auto
           icon: mdi:pause
-          name: Pause # change me
+          name: Pause
           tap_action:
             action: call-service
             service: vacuum.pause
@@ -296,7 +296,7 @@ cards:
           type: custom:button-card
           color: auto
           icon: mdi:play-pause
-          name: Weiter # change me
+          name: Weiter
           tap_action:
             action: call-service
             service: vacuum.start
@@ -309,7 +309,7 @@ cards:
       - type: custom:button-card
         template: vacuum_service
         icon: mdi:stop
-        name: Stop # change me
+        name: Stop
         tap_action:
           service: vacuum.stop
         variables:
@@ -322,7 +322,7 @@ cards:
       - type: custom:button-card
         template: vacuum_service
         icon: mdi:home-map-marker
-        name: Zurück zur Ladestation # change me
+        name: Zurück zur Ladestation
         tap_action:
           service: vacuum.return_to_base
         variables:
@@ -333,7 +333,7 @@ cards:
       - type: custom:button-card
         color: auto
         icon: mdi:map-marker
-        name: Lokalisieren # change me
+        name: Lokalisieren
         tap_action:
           action: call-service
           service: vacuum.locate
