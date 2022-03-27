@@ -28,7 +28,7 @@
 | Deebot M88              |         :material-close:         |         :material-check:         | XMPP      | XML       |
 | Deebot N3 MAX           |                                  |                                  | REST/MQTT | JSON      |
 | Deebot N7               |                                  |                                  | REST/MQTT | JSON      |
-| Deebot N8 series        |                                  |                                  | REST/MQTT | JSON      |
+| Deebot N8 series        |         :material-check:         |                                  | REST/MQTT | JSON      |
 | Deebot N79 series       |         :material-close:         |         :material-check:         | XMPP      | XML       |
 | Deebot U2 series        |                                  |    :material-progress-check:     | REST/MQTT | JSON      |
 | Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-double: | XMPP      | XML       |
