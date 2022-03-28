@@ -115,3 +115,4 @@ nav:
                   - Water: advanced/data_types/xml/commands/waterlevel.md
               - Messages:
                   - advanced/data_types/xml/messages/index.md
+                  - General: advanced/data_types/xml/messages/general.md
