@@ -24,7 +24,7 @@ Adjust it for your needs.
 
 !!! todo
 
-    Please change the of the entities accordingly, *most* lines are anotated with "change me".
+    Please change the of the entities accordingly, **most** lines are anotated with "change me".
     My vacuum has the name _"susi"_.
 
 ## Backend (configuration.yaml)
