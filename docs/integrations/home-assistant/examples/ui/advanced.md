@@ -24,7 +24,7 @@ Adjust it for your needs.
 
 !!! todo
 
-    Please change the of the entities accordingly, most lines are anotated with "change me".
+    Please change the of the entities accordingly, *most* lines are anotated with "change me".
     My vacuum has the name _"susi"_.
 
 ## Backend (configuration.yaml)
@@ -72,13 +72,14 @@ script:
         data:
           variable: "{{ queue }}"
           value: >-
-            {%- set queue = states("variable.deebot_susi_queue").split(",") -%}
-            {%- if states("variable.deebot_susi_queue") | length == 0 -%}
+            {%- set queue_state = states(queue) -%}
+            {%- set queue_split = queue_state.split(",") -%}
+            {%- if queue_state | length == 0 -%}
               {{ room }}
-            {%- elif room in queue -%}
-              {{ queue | reject("eq", room) | list | join(",")}}
+            {%- elif room in queue_split -%}
+              {{ queue_split | reject("eq", room) | list | join(",")}}
             {%- else -%}
-              {{ (queue + [room]) | join(",") }}
+              {{ (queue_split + [room]) | join(",") }}
             {%- endif -%}
 
 recorder:
