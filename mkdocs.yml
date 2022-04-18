@@ -91,13 +91,18 @@ nav:
                   - advanced/data_types/json/commands/index.md
                   - General: advanced/data_types/json/commands/general.md
                   - Advanced mode: advanced/data_types/json/commands/advanced_mode.md
+                  - Auto empty: advanced/data_types/json/commands/auto_empty.md
                   - Break point: advanced/data_types/json/commands/break_point.md
                   - Carpet pressure: advanced/data_types/json/commands/carpet_pressure.md
+                  - Clean count: advanced/data_types/json/commands/clean_count.md
+                  - Empty dustbin: advanced/data_types/json/commands/empty_dustbin.md
                   - Life span: advanced/data_types/json/commands/life_span.md
                   - Map: advanced/data_types/json/commands/map.md
                   - Play sound: advanced/data_types/json/commands/play_sound.md
                   - Relocate: advanced/data_types/json/commands/relocate.md
+                  - Sleep mode: advanced/data_types/json/commands/sleep_mode.md
                   - Stats: advanced/data_types/json/commands/stats.md
+                  - True detect: advanced/data_types/json/commands/true_detect.md
                   - Volume: advanced/data_types/json/commands/volume.md
                   - Water: advanced/data_types/json/commands/water.md
               - Messages:
