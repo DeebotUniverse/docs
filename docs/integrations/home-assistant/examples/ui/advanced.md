@@ -72,7 +72,7 @@ script:
         data:
           variable: "{{ queue }}"
           value: >-
-            {%- set queue_state = states(queue) -%}
+            {%- set queue_state = states('variable.' + queue) -%}
             {%- set queue_split = queue_state.split(",") -%}
             {%- if queue_state | length == 0 -%}
               {{ room }}
