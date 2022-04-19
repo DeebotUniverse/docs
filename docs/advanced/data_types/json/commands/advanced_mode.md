@@ -12,7 +12,7 @@ commands:
             "enable": 1
           }
   - name: setAdvancedMode
-    description: Command to enable/disabled the advanced mode.
+    description: Command to enable/disable the advanced mode.
     request:
       arguments:
         enable: "`1` to enable; `0` to disable"

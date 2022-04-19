@@ -2,7 +2,7 @@
 data_type: json
 commands:
   - name: getAutoEmpty
-    description: Check if the auto empty mode is activated.
+    description: Check if the auto empty mode for the Auto Empty Station is activated.
     response:
       arguments:
         enable: "`1` if enabled otherwise `0`"
@@ -18,10 +18,10 @@ commands:
         enable: "`1` to enable; `0` to disable"
       <<: *example
   - name: setAutoEmpty
-    description: Command to directly empty the dustbin to the Auto-Empty Station.
+    description: Command for direct emptying the dust bin.
     request:
       arguments:
-        act: "`start` for directly empty the dustbin"
+        act: "`start` for direct emptying the dust bin"
       example: >-
         {
           "act": "start"

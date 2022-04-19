@@ -12,7 +12,7 @@ commands:
             "enable": 1
           }
   - name: setTrueDetect
-    description: Command to enable/disabled the "TrueDetect 3D" mode.
+    description: Command to enable/disable the "TrueDetect 3D" mode.
     request:
       arguments:
         enable: "`1` to enable; `0` to disable"
