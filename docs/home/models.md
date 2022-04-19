@@ -9,7 +9,7 @@
 
 Used by [Deebot for Home Assistant](https://github.com/DeebotUniverse/Deebot-4-Home-Assistant)
 
-| Model                   |          deebot-client           | Protocol  | Data type |
+| Model                   |              status              | Protocol  | Data type |
 | ----------------------- | :------------------------------: | --------- | --------- |
 | Deebot OZMO 920         |         :material-check:         | REST/MQTT | JSON      |
 | Deebot OZMO 950         | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
@@ -24,7 +24,7 @@ Used by [Deebot for Home Assistant](https://github.com/DeebotUniverse/Deebot-4-H
 
 Used by [Ecovacs Deebot adapter](https://github.com/mrbungle64/ioBroker.ecovacs-deebot) and [various others](projects.md#ecovacs-deebotjs)
 
-| Model                   |        ecovacs-deebot.js         | Protocol  | Data type |
+| Model                   |              status              | Protocol  | Data type |
 | ----------------------- | :------------------------------: | --------- | --------- |
 | Deebot 500/501          |         :material-check:         |           |           |
 | Deebot 600/601/605      |         :material-check:         | REST/MQTT | XML       |
