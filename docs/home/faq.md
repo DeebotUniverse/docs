@@ -4,4 +4,4 @@
 
 ### Is my device supported?
 
-Please check [this list](models.md#Model support) of models to see if your device is supported.
+Please check [this list](models.md) of models to see if your device is supported.
