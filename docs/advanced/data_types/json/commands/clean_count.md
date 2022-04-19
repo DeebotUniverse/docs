@@ -2,7 +2,7 @@
 data_type: json
 commands:
   - name: getCleanCount
-    description: Get the persistent value for clean count.
+    description: Get the permanently stored setting for number of cleaning cycles for auto clean.
     response:
       arguments:
         count: the number of cleanings
@@ -12,7 +12,7 @@ commands:
             "count": 2
           }
   - name: setCleanCount
-    description: Command to set the persistent value for clean count.
+    description: Command to set the number of cleaning cycles for auto clean (permanently stored).
     request:
       arguments:
         count: the number of cleanings
