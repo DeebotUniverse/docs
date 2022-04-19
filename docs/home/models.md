@@ -5,31 +5,46 @@
     We do not provide support that is the same, equal, or similar to manufacturer support
     because we are in no way affiliated with ECOVACS nor is it sponsored or endorsed by ECOVACS
 
-!!! note
+## :material-language-python: deebot-client
 
-    Which library is used by a integration can be found under the [projects page](projects.md).
+Used by [Deebot for Home Assistant](https://github.com/DeebotUniverse/Deebot-4-Home-Assistant)
 
-| Model                   |          deebot-client           |        ecovacs-deebot.js         | Protocol  | Data type |
-| ----------------------- | :------------------------------: | :------------------------------: | --------- | --------- |
-| Deebot 500/501          |         :material-close:         |         :material-check:         |           |           |
-| Deebot 600/601/605      |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
-| Deebot 710/711/711s     |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
-| Deebot 900/901          |         :material-close:         | :fontawesome-solid-check-double: | REST/MQTT | XML       |
-| Deebot OZMO Slim 10/11  |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
-| Deebot OZMO 610         |         :material-close:         |         :material-check:         | XMPP      | XML       |
-| Deebot OZMO 900/905     |         :material-close:         |         :material-check:         | REST/MQTT | XML       |
-| Deebot OZMO 920         |         :material-check:         | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
-| Deebot OZMO 930         |         :material-close:         | :fontawesome-solid-check-double: | XMPP      | XML       |
-| Deebot OZMO 950         | :fontawesome-solid-check-double: | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
-| Deebot OZMO T5          |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
-| Deebot (OZMO) T8 series |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
-| Deebot T9 series        |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
-| Deebot M88              |         :material-close:         |         :material-check:         | XMPP      | XML       |
-| Deebot N8 series        |         :material-check:         |         :material-check:         | REST/MQTT | JSON      |
-| Deebot N79 series       |         :material-close:         |         :material-check:         | XMPP      | XML       |
-| Deebot U2 series        |                                  |    :material-progress-check:     | REST/MQTT | JSON      |
-| Deebot Slim 2           |         :material-close:         | :fontawesome-solid-check-double: | XMPP      | XML       |
-| Deebot X1 Omni          |                                  |         :material-check:         | REST/MQTT | JSON      |
+| Model                   |          deebot-client           | Protocol  | Data type |
+| ----------------------- | :------------------------------: | --------- | --------- |
+| Deebot OZMO 920         |         :material-check:         | REST/MQTT | JSON      |
+| Deebot OZMO 950         | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
+| Deebot OZMO T5          |         :material-check:         | REST/MQTT | JSON      |
+| Deebot (OZMO) T8 series |         :material-check:         | REST/MQTT | JSON      |
+| Deebot T9 series        |         :material-check:         | REST/MQTT | JSON      |
+| Deebot N8 series        |         :material-check:         | REST/MQTT | JSON      |
+| Deebot U2 series        |                                  | REST/MQTT | JSON      |
+| Deebot X1 Omni          |                                  | REST/MQTT | JSON      |
+
+## :material-language-javascript: ecovacs-deebot.js
+
+Used by [Ecovacs Deebot adapter](https://github.com/mrbungle64/ioBroker.ecovacs-deebot) and [various others](projects.md#ecovacs-deebotjs)
+
+| Model                   |        ecovacs-deebot.js         | Protocol  | Data type |
+| ----------------------- | :------------------------------: | --------- | --------- |
+| Deebot 500/501          |         :material-check:         |           |           |
+| Deebot 600/601/605      |         :material-check:         | REST/MQTT | XML       |
+| Deebot 710/711/711s     |         :material-check:         | REST/MQTT | XML       |
+| Deebot 900/901          | :fontawesome-solid-check-double: | REST/MQTT | XML       |
+| Deebot OZMO Slim 10/11  |         :material-check:         | REST/MQTT | XML       |
+| Deebot OZMO 610         |         :material-check:         | XMPP      | XML       |
+| Deebot OZMO 900/905     |         :material-check:         | REST/MQTT | XML       |
+| Deebot OZMO 920         | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
+| Deebot OZMO 930         | :fontawesome-solid-check-double: | XMPP      | XML       |
+| Deebot OZMO 950         | :fontawesome-solid-check-double: | REST/MQTT | JSON      |
+| Deebot OZMO T5          |         :material-check:         | REST/MQTT | JSON      |
+| Deebot (OZMO) T8 series |         :material-check:         | REST/MQTT | JSON      |
+| Deebot T9 series        |         :material-check:         | REST/MQTT | JSON      |
+| Deebot M88              |         :material-check:         | XMPP      | XML       |
+| Deebot N8 series        |         :material-check:         | REST/MQTT | JSON      |
+| Deebot N79 series       |         :material-check:         | XMPP      | XML       |
+| Deebot U2 series        |    :material-progress-check:     | REST/MQTT | JSON      |
+| Deebot Slim 2           | :fontawesome-solid-check-double: | XMPP      | XML       |
+| Deebot X1 Omni          |         :material-check:         | REST/MQTT | JSON      |
 
 ## Legend
 

@@ -16,3 +16,4 @@
 - :material-home-automation: [homebridge-deebot](https://github.com/bwp91/homebridge-deebot) (Homebridge)
 - :material-home-automation: [homebridge-deebotecovacs](https://github.com/nicoduj/homebridge-deebotEcovacs) (Homebridge)
 - :material-home-automation: [pimatic-deebot](https://github.com/bertreb/pimatic-deebot) (Pimatic)
+- :material-home-automation: [Ecovacs Deebot](https://github.com/Aybert59/com.messiant.ecovacs) (Homey)
