@@ -11,7 +11,7 @@ commands:
             data_values:
               brush: main brush
               sideBrush: side brush
-              filter: filter
+              heap: filter
               unitCare: other components [^1]
               dModule: unknown [^1]
       example: >-
