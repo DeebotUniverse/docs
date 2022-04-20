@@ -19,6 +19,18 @@ data:
   command: relocate
 ```
 
+## Set fan speed
+
+You can set the value of fan speed (available values for fan_speed are: quiet, normal, max, max+)
+
+```yaml
+# Set fan speed
+service: vacuum.set_fan_speed
+data:
+  entity_id: vacuum.YOUR_ROBOT_NAME
+  fan_speed: quiet
+```
+
 ## Clean only certain rooms
 
 You can clean certain area by specify it in rooms params, you can find room number under vacuum attributes
