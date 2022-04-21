@@ -21,7 +21,7 @@ data:
 
 ## Set fan speed
 
-You can set the value of fan speed (available values for fan_speed are: quiet, normal, max, max+)
+You can set the value of fan speed with the [generic Vacuum integrations](https://www.home-assistant.io/integrations/vacuum/#service-vacuumset_fan_speed). The available values for fan_speed are: quiet, normal, max, max+.
 
 ```yaml
 # Set fan speed
