@@ -89,7 +89,7 @@ data:
 You can play a sound or voice report.
 
 ```yaml
-# Set fan speed
+# Play sound
 service: vacuum.send_command
 target:
   entity_id: vacuum.aspirapolvere
