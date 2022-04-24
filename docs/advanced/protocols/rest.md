@@ -9,7 +9,7 @@ A command request look in general like:
 ```json
 {
   "cmdName": "[commandName]",
-  "payload": "[playload]",
+  "payload": "[payload]",
   "payloadType": "[payloadType]",
   "auth": {
     "realm": "ecouser.net",
@@ -28,7 +28,7 @@ A command request look in general like:
 ### Description
 
 - `cmdName`: command name
-- `playload`: command request object. Will be described in the respective payload type
+- `payload`: command request object. Will be described in the respective payload type
   - [json commands](../data_types/json/commands/index.md)
   - [xml commands](../data_types/xml/commands/index.md)
 - `payloadType`:

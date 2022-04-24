@@ -4,7 +4,7 @@ A message looks like:
 
 ```xml
 <ctl ts='[timestamp]' td='[command]'>
-    <playload sampleAttribute='value'/>
+    <payload sampleAttribute='value'/>
 </ctl>
 ```
 
