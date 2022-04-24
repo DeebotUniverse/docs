@@ -83,3 +83,20 @@ data:
   params:
     act: start
 ```
+
+## Play sound
+
+You can play a sound or voice report.
+
+```yaml
+# Set fan speed
+service: vacuum.send_command
+target:
+  entity_id: vacuum.aspirapolvere
+data:
+  command: playSound
+  params: 
+    sid: 30		
+```
+!!! info "Available sound IDs"
+    For a list of available sound IDs see [here](https://github.com/mrbungle64/ecovacs-deebot.js/wiki/playSound#available-sound-ids)
