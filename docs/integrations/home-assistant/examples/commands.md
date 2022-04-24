@@ -1,12 +1,8 @@
 # Example commands
 
-## Clean all
+All `vacuum` services offered by Home Assistant are described in their [docs](https://www.home-assistant.io/integrations/vacuum/#component-services).
 
-```yaml
-service: vacuum.start
-target:
-  entity_id: vacuum.YOUR_ROBOT_NAME
-```
+Below some more advanced examples:
 
 ## Relocate Robot
 
@@ -58,16 +54,11 @@ data:
 
     Also the coordinates will be logged on `debug`. After activating debug logs, you can search your logs for `Last custom area values (x1,y1,x2,y2):` to get the coordinates.
 
-## Empty dustbin with auto-empty station
+## Custom commands
 
-Manually start empting the dustbin, when the robot is docked on a auto-empty station.
+!!! warning "Only for advanced users"
 
-```yaml
-service: vacuum.send_command
-target:
-  entity_id: vacuum.YOUR_ROBOT_NAME
-data:
-  command: setAutoEmpty
-  params:
-    act: start
-```
+    The reason for this use case is only to give advanced users the possibility to
+    try/use a command, which is not implemented yet.
+
+More information can be found under [deebot_custom_command](../events.md#deebotcustomcommand)

@@ -11,4 +11,4 @@ The following svg of the Deebot Ozmo 950 can be found under [images](../../asset
     The reason for these command is only to give advanced users the possibility to
     try/use a command, which is not implemented yet.
 
-For that use also the `vacuum.send_command` service and you will get the response as `deebot_custom_command` event.
+For more information see event [`deebot_custom_command`](events.md#deebotcustomcommand).
