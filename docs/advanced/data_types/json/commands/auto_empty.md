@@ -24,7 +24,7 @@ commands:
       additional: >-
         !!! warning
 
-          The arguments are exclusive, meaning you can only specify one at the time!
+            **The arguments are exclusive, meaning you can only specify one at the time!** Either `enable` or `act`
 ---
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
