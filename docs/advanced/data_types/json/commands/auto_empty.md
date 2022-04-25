@@ -12,20 +12,19 @@ commands:
             "enable": 1
           }
   - name: setAutoEmpty
-    description: Command to set the auto empty mode (permanently stored).
+    description: Command to set the auto empty mode (permanently stored) or to manually empty dust bin.
     request:
       arguments:
-        enable: "`1` to enable; `0` to disable"
-      <<: *example
-  - name: setAutoEmpty
-    description: Command for direct emptying the dust bin.
-    request:
-      arguments:
-        act: "`start` for direct emptying the dust bin"
+        enable: "`1` to enable; `0` to disable emptying dustbin after a cleaning job"
+        act: "`start` for manual emptying the dust bin"
       example: >-
         {
           "act": "start"
         }
+      additional: >-
+        !!! warning
+
+            **The arguments are exclusive, meaning you can only specify one at the time!** Either `enable` or `act`
 ---
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
