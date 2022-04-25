@@ -15,7 +15,7 @@ commands:
     description: Command to set the auto empty mode (permanently stored) or to manually empty dust bin.
     request:
       arguments:
-        enable: "`1` to enable; `0` to disable emptying dustbin after a cleaning job" 
+        enable: "`1` to enable; `0` to disable emptying dustbin after a cleaning job"
         act: "`start` for manual emptying the dust bin"
       example: >-
         {
