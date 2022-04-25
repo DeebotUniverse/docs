@@ -7,7 +7,6 @@ Below some more advanced examples:
 ## Relocate Robot
 
 ```yaml
-# Relocate Robot
 service: vacuum.send_command
 target:
   entity_id: vacuum.YOUR_ROBOT_NAME
@@ -20,7 +19,6 @@ data:
 You can clean certain area by specify it in rooms params, you can find room number under vacuum attributes
 
 ```yaml
-# Clean Area
 service: vacuum.send_command
 target:
   entity_id: vacuum.YOUR_ROBOT_NAME
@@ -34,7 +32,6 @@ data:
 ## Clean custom area
 
 ```yaml
-# Customize Clean
 service: vacuum.send_command
 target:
   entity_id: vacuum.YOUR_ROBOT_NAME

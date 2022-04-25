@@ -34,12 +34,12 @@ This integration supports also sending "raw" commands to the vacuum.
 If your model supports the command and a response will be received, it will be fired with this event.
 The event data depends on which command was send.
 
-Some commands are documented under [advanced](../../advanced/data_types/json/commands/).
+Some commands are documented under [advanced](../../../advanced/data_types/json/commands/).
 
 ### Example `getLifeSpan`
 
 To send a custom command, we use the service [`vacuum.send_command`](https://www.home-assistant.io/integrations/vacuum/#service-vacuumsend_command).
-From the [`getLifeSpan` documentation](../../advanced/data_types/json/commands/life_span#getlifespan), we get the following information:
+From the [`getLifeSpan` documentation](../../../advanced/data_types/json/commands/life_span#getlifespan), we get the following information:
 
 - command name is `getLifeSpan`
 - the arguments is a list of components from which we want to get the life span.
