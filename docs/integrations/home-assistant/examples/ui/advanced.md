@@ -13,7 +13,6 @@ Thanks to @aidbish for the initial idea.
 
 For this setup to work, you need some custom components (all available via HACS)
 
-- [Variables](https://github.com/Wibias/hass-variables)
 - [Vacuum-card](https://github.com/denysdovhan/vacuum-card)
 - [Button-card](https://github.com/custom-cards/button-card)
 
@@ -24,8 +23,8 @@ Adjust it for your needs.
 
 !!! todo
 
-    Please change the of the entities accordingly, **most** lines are anotated with "change me".
-    My vacuum has the name _"susi"_.
+    Please change the of the entities accordingly. My vacuum has the name _"susi"_.
+    Search for this name :)
 
 ## Backend (configuration.yaml)
 
@@ -34,8 +33,8 @@ script:
   deebot_clean:
     description: Start a deebot cleaning task
     variables:
-      queue: variable.deebot_susi_queue # change me
-      vacuum_bot: vacuum.susi # change me
+      queue: input_text.deebot_susi_queue
+      vacuum_bot: vacuum.susi
     sequence:
       - alias: Get room numbers
         variables:
@@ -63,16 +62,17 @@ script:
     fields:
       queue:
         description: The queue variable
-        example: deebot_susi_queue
+        example: input_text.deebot_susi_queue
       room:
         description: Room, which should be removed or added
         example: kitchen
     sequence:
-      - service: variable.set_variable
+      - service: input_text.set_value
+        target:
+          entity_id: "{{ queue }}"
         data:
-          variable: "{{ queue }}"
           value: >-
-            {%- set queue_state = states('variable.' + queue) -%}
+            {%- set queue_state = states(queue) -%}
             {%- set queue_split = queue_state.split(",") -%}
             {%- if queue_state | length == 0 -%}
               {{ room }}
@@ -82,36 +82,50 @@ script:
               {{ (queue_split + [room]) | join(",") }}
             {%- endif -%}
 
+automation:
+  - alias: Staubsauger Zimmer resetieren
+    trigger:
+      - platform: event
+        event_type: deebot_cleaning_job
+        event_data:
+          status: finished
+    condition: []
+    action:
+      - alias: Reset room queue
+        service: input_text.set_value
+        target:
+          entity_id: input_text.deebot_susi_queue
+        data:
+          value: ""
+    mode: single
+
 recorder:
   exclude:
     entities:
-      - variable.deebot_susi_queue # change me
+      - input_text.deebot_susi_queue
       - script.deebot_room_queue
     entity_globs:
       - sensor.deebot_*_queue_*
 
-variable:
-  deebot_susi_queue: # change me
-    name: Susi Raum Reihenfolge # change me
-    value: ""
-    restore: false
+input_text:
+  deebot_susi_queue:
+    name: Susi Raum Reihenfolge
+    max: 255 # Current max limit. See https://www.home-assistant.io/integrations/input_text/#max
 
 # Room name comes from the integration to match attribute names
 template:
-  unique_id: deebot_susi_queue # change me
+  unique_id: deebot_susi_queue
   trigger:
-    - platform: homeassistant
-      event: start
     - platform: state
-      entity_id: variable.deebot_susi_queue # change me
+      entity_id: input_text.deebot_susi_queue
   sensor:
     # Add for each room the following. Change room_name accordingly
-    - unique_id: deebot_susi_queue_living_room # change me
-      name: deebot_susi_queue_living_room # change me
+    - unique_id: deebot_susi_queue_living_room
+      name: deebot_susi_queue_living_room
       # room_name must match the room name provided by the vacuum
       state: >
         {% set room_name = "living_room" %}
-        {% set queue = trigger.to_state.state.split(",") if trigger.to_state is defined else "" %}
+        {% set queue = trigger.to_state.state.split(",") %}
         {{ queue.index(room_name)+1 if room_name in queue else 0 }}
 ```
 
