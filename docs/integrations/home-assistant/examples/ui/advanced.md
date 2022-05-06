@@ -112,7 +112,6 @@ input_text:
     name: Susi Raum Reihenfolge
     max: 255 # Current max limit. See https://www.home-assistant.io/integrations/input_text/#max
 
-
 # Room name comes from the integration to match attribute names
 template:
   unique_id: deebot_susi_queue
