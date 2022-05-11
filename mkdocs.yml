@@ -97,8 +97,10 @@ nav:
                   - Clean count: advanced/data_types/json/commands/clean_count.md
                   - Life span: advanced/data_types/json/commands/life_span.md
                   - Map: advanced/data_types/json/commands/map.md
+                  - Net info: advanced/data_types/json/commands/net_info.md
                   - Play sound: advanced/data_types/json/commands/play_sound.md
                   - Relocate: advanced/data_types/json/commands/relocate.md
+                  - Speed: advanced/data_types/json/commands/speed.md
                   - Sleep mode: advanced/data_types/json/commands/sleep_mode.md
                   - Stats: advanced/data_types/json/commands/stats.md
                   - True detect: advanced/data_types/json/commands/true_detect.md
