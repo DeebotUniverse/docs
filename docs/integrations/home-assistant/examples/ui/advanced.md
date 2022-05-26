@@ -205,7 +205,7 @@ button_card_templates:
       action: call-service
       service: script.deebot_room_queue
       service_data:
-        queue: deebot_susi_queue # change me
+        queue: input_text.deebot_susi_queue
     lock:
       enabled: |
         [[[ return variables.lock_enabled ]]]
