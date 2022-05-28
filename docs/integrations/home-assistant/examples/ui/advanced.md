@@ -281,8 +281,8 @@ cards:
             # change me
             enabled: |
               [[[ 
-                return ((!states['variable.deebot_susi_queue'].state || 
-                    states['variable.deebot_susi_queue'].state.length === 0)
+                return ((!states['input_text.deebot_susi_queue'].state || 
+                    states['input_text.deebot_susi_queue'].state.length === 0)
                     && ['docked', 'idle', 'error', 'returning'].includes(entity.state))
               ]]]
       - type: conditional
