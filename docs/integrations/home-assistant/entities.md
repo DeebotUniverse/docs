@@ -11,7 +11,7 @@ All exposed entities have the following naming schema:
 
 E.g. `binary_sensor.susi_mop_attached`
 
-!!! info
+!!! attention
 
     Except the **vacuum**  entity, all others are disabled by default.
     You should only enable the required ones.
