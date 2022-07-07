@@ -39,4 +39,4 @@ commands:
 [^1]: Models without mapping functionality only
 [^2]: Models with mapping functionality only
 [^3]: Models with single room cleaning mode only
-[^4]: Spot and border type cant pause, only stop.
+[^4]: spot and border modes cannot be paused, they can only be stopped.
