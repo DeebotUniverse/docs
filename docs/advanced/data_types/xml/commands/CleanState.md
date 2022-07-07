@@ -19,7 +19,7 @@ commands:
   <<: &component_type
   type:
   description: The corresponding value for the component.
-<<:*component_values
+  <<:*component_values
   auto: auto clean
   border: border clean
   spot: spot clean
@@ -33,7 +33,7 @@ commands:
   <<: &component_type
   mode:
   description: The corresponding value for the component.
-<<:*component_values
+  <<:*component_values
   R: unknown  
    <<: &component_type
   t and a:
@@ -41,9 +41,9 @@ commands:
   <<: \*component_values
   int: unknown
 
-        example: >-
-          [
-            <clean type='auto' speed='standard' st='h' mode='R' t='100' a='100'/>
-          ]
+          example: >-
+            [
+              <clean type='auto' speed='standard' st='h' mode='R' t='100' a='100'/>
+            ]
 
   {% include 'advanced/data_types/commands-template.jinja2' %}
