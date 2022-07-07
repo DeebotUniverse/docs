@@ -14,7 +14,7 @@ commands:
               dustcaseheap: filter
 
       example: >-
-          <ctl type="Brush" />
+        <ctl type="Brush" />
     response:
       arguments:
         "[result]":
@@ -27,14 +27,13 @@ commands:
             left: Remaining lifetime in minutes
             total: Total lifetime in minutes
       example: >-
-        
-          <ctl ret='ok' type='Brush' left='13858' total='18000'/>
-        
+
+        <ctl ret='ok' type='Brush' left='13858' total='18000'/>
+
       additional: >-
         !!! hint
 
             To calculate the percentage use `left/total`.
-
 ---
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
