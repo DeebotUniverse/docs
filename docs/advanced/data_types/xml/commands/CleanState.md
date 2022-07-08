@@ -3,7 +3,7 @@
 data_type: xml
 commands:
 
-- name: getCleanState
+- name: GetCleanState
   description: Command to get information about clean state.
   response:
   arguments:
