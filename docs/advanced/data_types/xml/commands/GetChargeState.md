@@ -1,7 +1,7 @@
 ---
 data_type: xml
 commands:
-  - name: getchargestate
+  - name: GetChargeState
     description: Command to obtain charge state.
     response:
       arguments:
