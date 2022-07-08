@@ -5,29 +5,32 @@ commands:
     description: Command to start a cleaning.
     request:
       arguments:
-        clean:
+        "[clean]":
           arguments:
-            type:
+            "[type]":
               description: clean mode
-              data_values:
-                auto: auto clean
-                border: border clean [^1]
-                spot: spot clean [^1]
-                SpotArea: spot area and custom area clean [^2]
-                singleroom: single room clean [^3]
-                stop: stop
-            act:
+			  <<: &component_values
+                data_values:
+                  auto: auto clean
+                  border: border clean [^1]
+                  spot: spot clean [^1]
+                  SpotArea: spot area and custom area clean [^2]
+                  singleroom: single room clean [^3]
+                  stop: stop
+            "[act]":
               description: clean action
-              data_values:
-                s: start
-                p: pause [^4]
-                r: resume
-                h: stop
-            speed:
+			  <<: &component_values
+                data_values:
+                  s: start
+                  p: pause [^4]
+                  r: resume
+                  h: stop
+            "[speed]":
               description: vacuum power
-              data_values:
-                standard: standard
-                strong: max
+			  <<: &component_values
+                data_values:
+                  standard: standard
+                  strong: max
       additional: >-
         !!! info
 
@@ -39,4 +42,4 @@ commands:
 [^1]: Models without mapping functionality only
 [^2]: Models with mapping functionality only
 [^3]: Models with single room cleaning mode only
-[^4]: spot and border modes cannot be paused, they can only be stopped.
+[^4]: Spot and border modes cannot be paused, they can only be stopped.
