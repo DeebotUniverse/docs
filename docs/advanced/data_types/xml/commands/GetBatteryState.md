@@ -1,7 +1,7 @@
 ---
 data_type: xml
 commands:
-  - name: getbatterystate
+  - name: GetBatteryInfo
     description: Command to obtain battery state.
     response:
       arguments:
