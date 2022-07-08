@@ -1,7 +1,7 @@
 ---
 data_type: XML
 commands:
-  - name: getLifeSpan
+  - name: GetLifeSpan
     description: Command to get information about accessories components.
     request:
       arguments:
