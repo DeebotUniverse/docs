@@ -8,7 +8,7 @@ commands:
         "[battery]":
           arguments:
             "[power]":
-              description: power level
+              description: battery level
               <<: &component_values
                 data_values:
                   000-100: percentage of battery remaining
