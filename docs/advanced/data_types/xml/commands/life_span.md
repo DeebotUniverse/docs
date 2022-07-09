@@ -9,9 +9,9 @@ commands:
           description: A list with corresponding value for the components.
           <<: &component_values
             data_values:
-              brush: main brush
-              sideBrush: side brush
-              dustcaseheap: filter
+              Brush: main brush
+              SideBrush: side brush
+              DustCaseHeap: filter
 
       example: >-
         <ctl type="Brush" />
