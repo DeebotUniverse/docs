@@ -55,4 +55,3 @@ commands:
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
 
-[^1]: Only available for some newer models (e.g. T8/T9 series)
