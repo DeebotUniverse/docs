@@ -75,4 +75,3 @@ commands:
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
 
-[^1]: Only present when `type` = `ar`

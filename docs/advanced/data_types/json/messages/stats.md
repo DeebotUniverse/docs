@@ -55,4 +55,3 @@ messages:
 
 {% include 'advanced/data_types/messages-template.jinja2' %}
 
-[^1]: Only present at the end of the cleaning job.
