@@ -97,7 +97,7 @@ nav:
                   - Clean count: advanced/data_types/json/commands/clean_count.md
                   - Life span: advanced/data_types/json/commands/life_span.md
                   - Map: advanced/data_types/json/commands/map.md
-                  - Multimap state: advanced/data_types/json/commands/map.md
+                  - Multimap state: advanced/data_types/json/commands/multimap_state.md
                   - Net info: advanced/data_types/json/commands/net_info.md
                   - Over the air update: advanced/data_types/json/commands/ota.md
                   - Play sound: advanced/data_types/json/commands/play_sound.md
