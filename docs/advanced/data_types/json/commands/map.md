@@ -79,7 +79,7 @@ commands:
         type:
           description: Which type should be cleared
           data_values:
-            all: All types will be cleared. In other words the complete map will be reseted.
+            all: All types will be cleared. In other words the complete map is cleared.
       example: >-
         {
             "mid": "353140366",
