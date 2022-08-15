@@ -71,6 +71,20 @@ commands:
           "connections": "17,14,10,11,13,7",
           "mid": "199390082"
         }
+  - name: clearMap
+    description: Clear/reset the map
+    request:
+      arguments:
+        mid: Map id
+        type:
+          description: Which type should be cleared
+          data_values:
+            all: All types will be cleared. In other words the complete map will be reseted.
+      example: >-
+        {
+            "mid": "353140366",
+            "type": "all"
+        }
 ---
 
 {% include 'advanced/data_types/commands-template.jinja2' %}
