@@ -18,7 +18,7 @@ Used by [Deebot for Home Assistant](https://github.com/DeebotUniverse/Deebot-4-H
 | Deebot T9 series        |         :material-check:         | REST/MQTT | JSON      |
 | Deebot N8 series        |         :material-check:         | REST/MQTT | JSON      |
 | Deebot U2 series        |                                  | REST/MQTT | JSON      |
-| Deebot X1 Omni          |                                  | REST/MQTT | JSON      |
+| Deebot X1 Omni          | :material-progress-check:	     | REST/MQTT | JSON      |
 
 ## :material-language-javascript: ecovacs-deebot.js
 
