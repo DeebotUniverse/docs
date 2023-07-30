@@ -14,6 +14,8 @@ commands:
               heap: filter
               unitCare: other components [^1]
               dModule: unknown [^1]
+              roundMop: round mop [^2]
+              strainer: strainer [^2]
       example: >-
         [
           "sideBrush",
@@ -56,3 +58,4 @@ commands:
 {% include 'advanced/data_types/commands-template.jinja2' %}
 
 [^1]: Only available for some newer models (e.g. T8/T9 series)
+[^2]: Only available for some newer models (e.g. X1 OMNI)
