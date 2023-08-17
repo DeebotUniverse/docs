@@ -10,7 +10,7 @@ Parameters:
 
 - `service`: `deebot.refresh`
 - `target.entity_id`: Entity id of vacuum
-- `data.part`: Part, which should be refreshed. Following are supported:
+- `data.category`: Category, which should be refreshed. Following are supported:
   - Status
   - Error
   - Fan speed
@@ -27,7 +27,7 @@ Parameters:
     ```yaml
     service: deebot.refresh
     data:
-      part: Status
+      category: Status
     target:
       entity_id: vacuum.YOUR_ROBOT_NAME
     ```
