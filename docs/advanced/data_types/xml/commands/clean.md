@@ -37,5 +37,7 @@ commands:
 {% include 'advanced/data_types/commands-template.jinja2' %}
 
 [^1]: Models without mapping functionality only
+
 [^2]: Models with mapping functionality only
+
 [^3]: Models with single room cleaning mode only
