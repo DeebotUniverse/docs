@@ -80,6 +80,10 @@ nav:
                   - Simple: integrations/home-assistant/examples/ui/simple.md
                   - Advanced: integrations/home-assistant/examples/ui/advanced.md
           - Migration: integrations/home-assistant/migration.md
+  - GOAT Mowers:
+      - goat/index.md
+      - Supported models: goat/supported-models.md
+      - Mowing control: goat/mowing-control.md
   - Advanced:
       - Protocols:
           - MQTT: advanced/protocols/mqtt.md
