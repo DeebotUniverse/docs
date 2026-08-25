@@ -9,6 +9,8 @@
 
 Used by [Deebot for Home Assistant](https://github.com/DeebotUniverse/Deebot-4-Home-Assistant)
 
+### Vacuum cleaners
+
 | Model                   |              status              | Protocol  | Data type |
 | ----------------------- | :------------------------------: | --------- | --------- |
 | Deebot OZMO 920         |         :material-check:         | REST/MQTT | JSON      |
@@ -19,6 +21,20 @@ Used by [Deebot for Home Assistant](https://github.com/DeebotUniverse/Deebot-4-H
 | Deebot N8 series        |         :material-check:         | REST/MQTT | JSON      |
 | Deebot U2 series        |                                  | REST/MQTT | JSON      |
 | Deebot X1 Omni          |    :material-progress-check:     | REST/MQTT | JSON      |
+
+### ECOVACS GOAT mowers
+
+The following mower entries have dedicated upstream `deebot-client` hardware profiles. They are listed without a status icon because the existing status legend does not describe mower feature coverage precisely. The hardware profiles verify JSON as the data type.
+
+| Model                         | Hardware ID | Device type        | Data type |
+| ----------------------------- | ----------- | ------------------ | --------- |
+| ECOVACS GOAT G1               | `5xu9h3`    | `DeviceType.MOWER` | JSON      |
+| ECOVACS GOAT A1600 RTK        | `xmp9ds`    | `DeviceType.MOWER` | JSON      |
+| ECOVACS GOAT A3000 LiDAR Pro  | `51rcxt`    | `DeviceType.MOWER` | JSON      |
+| ECOVACS GOAT O500 Panorama    | `300lc5`    | `DeviceType.MOWER` | JSON      |
+| ECOVACS GOAT O1200 LiDAR      | `2i0fns`    | `DeviceType.MOWER` | JSON      |
+
+See [GOAT mower support](../goat/index.md) for the conservative mower capability notes.
 
 ## :material-language-javascript: ecovacs-deebot.js
 
